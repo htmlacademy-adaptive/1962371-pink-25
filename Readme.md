@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Денис Жосу](https://up.htmlacademy.ru/adaptive/25/user/1962371).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Ефимов](https://up.htmlacademy.ru/adaptive/25/user/367335).
 
 ---
 
