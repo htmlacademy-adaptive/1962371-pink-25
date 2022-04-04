@@ -1,0 +1,286 @@
+{% extends "_layout.njk" %}
+
+{% set title = 'Главная' %}
+
+{% block main %}
+  <section class="promo page-main__promo">
+    <h1 class="visually-hidden">
+        Pink.
+    </h1>
+    <p class="promo__title">
+       Взгляните на жизнь иначе!
+    </p>
+    <a class="promo__button" href="" >
+       Скачать приложение
+    </a>
+    <ul class="store-links promo__store">
+      <li class="store-links__item">
+        <a class="store-links__link store-links__link--apple" href="#!">
+          <span class="visually-hidden">
+            Apple.
+          </span>
+        </a>
+      </li>
+      <li class="store-links__item">
+        <a class="store-links__link store-links__link--android" href="#!">
+          <span class="visually-hidden">
+            Android.
+          </span>
+        </a>
+      </li>
+      <li class="store-links__item">
+        <a class="store-links__link store-links__link--windows" href="#!">
+          <span class="visually-hidden">
+            Windows
+          </span>
+        </a>
+      </li>
+    </ul>
+    <p class="promo__description">
+      Доступно для iPhone, iPad, Android,
+      <br>
+      Windows Phone, OS X, Windows 8
+    </p>
+  </section>
+  <section class="features page-main__features">
+    <h2 class="visually-hidden">
+      Особенности.
+    </h2>
+    <p class="features__tagline">
+      Устали от серости мегаполиса?
+    </p>
+    <p class="features__tagline">
+      Нам есть, что вам предложить!
+    </p>
+    <dl class="features__list">
+      <dt class="features__title">
+        Поднимает настроение
+      </dt>
+      <dd class="features__description">
+        Приложение позволит вам победить
+        <br>
+        осеннюю хандру и депрессию
+        <br>
+        буквально в несколько кликов!
+      </dd>
+      <dt class="features__title">
+        Меняет мир вокруг
+      </dt>
+      <dd class="features__description">
+        Сделайте снимок и украсьте его
+        <br>
+        смайликом или текстовой подписью,
+        <br>
+        чтобы усилить эффект
+      </dd>
+      <dt class="features__title">
+        Заводит новых друзей
+      </dt>
+      <dd class="features__description">
+        Ставьте лайки, комментируйте,
+        <br>
+        делитесь фотографиями с друзьями и
+        <br>
+        заводите новых
+      </dd>
+    </dl>
+  </section>
+  <section class="reviews page-main__reviews">
+    <h2 class="visually-hidden">
+      Отзывы.
+    </h2>
+    <ul class="reviews__list slider">
+      <li class="reviews__item slider__list">
+        <blockquote class="reviews__info slider__item">
+          <b class="reviews__autor">
+            Николай Петров
+          </b>
+          <p class="reviews__text">
+           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </blockquote>
+        <p class="reviews__toogles slider__toogles">
+          <button class="slider__toogles slider__toogles_current" type="button">
+            1
+          </button>
+          <button class="slider__toogles" type="button">
+            2
+          </button>
+          <button class="slider__toogles" type="button">
+            3
+          </button>
+        </p>
+      </li>
+    </ul>
+  </section>
+  <section class="tariffs page-main__tariffs slider">
+    <h2 class="visually-hidden">
+      Тарифы.
+    </h2>
+    <table class="tariffs__table">
+      <thead class="tariffs__names">
+        <tr class="tariffs__applications">
+          <th class="tariffs__name tariffs-invisibility">
+          <th class="tariffs__name">
+            База
+            <p class="tariffs__price">
+            1,99 USD
+            </p>
+          </th>
+          <th class="tariffs__name slider__name">
+            Стандарт
+            <span class="tariffs__hit">
+            Хит
+            </span>
+           <p class="tariffs__price">
+            3,99 USD
+            </p>
+          </th>
+          <th class="tariffs__name">
+            Анлим
+            <p class="tariffs__price">
+            9,99 USD
+            </p>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="tariffs__descriprions">
+        <tr class="tariffs__description">
+          <th class="tariffs__bonus slider_bonus">
+            Розовый фильтр
+            <td class="tariffs__detail">
+              <p class="tariffs__value tariffs__value--yes">
+                <p class="visually-hidden">
+                  Имеется
+                </p>
+              </p>
+            </td>
+            <td class="tariffs__detail">
+              <p class="tariffs__value tariffs__value--yes">
+                <p class="visually-hidden">
+                  Имеется
+                </p>
+              </p>
+            </td>
+            <td class="tariffs__detail">
+              <p class="tariffs__value tariffs__value--yes">
+                <p class="visually-hidden">
+                  Имеется
+                </p>
+              </p>
+            </td>
+          </th>
+        </tr>
+        <tr class="tariffs__description">
+          <th class="tariffs__bonus">
+            Смайлики
+            <td class="tariffs__detail">
+              <p class="tariffs__value tariffs__value--no">
+                <p class="visually-hidden">
+                  Отсутствует
+                </p>
+              </p>
+            </td>
+            <td class="tariffs__detail">
+              <p class="tariffs__value tariffs__value--yes">
+                <p class="visually-hidden">
+                  Имеется
+                </p>
+              </p>
+            </td>
+            <td class="tariffs__detail">
+              <p class="tariffs__value tariffs__value--yes">
+                <p class="visually-hidden">
+                  Имеется
+                </p>
+              </p>
+            </td>
+          </th>
+        </tr>
+        <tr class="tariffs__description">
+          <th class="tariffs__bonus">
+            Комментарии
+            <td class="tariffs__detail">
+              <p class="tariffs__value tariffs__value--no">
+                <p class="visually-hidden">
+                  Отсутствует
+                </p>
+              </p>
+            </td>
+            <td class="tariffs__detail">
+              <p class="tariffs__value tariffs__value--no">
+                <p class="visually-hidden">
+                  Отсутствует
+                </p>
+              </p>
+            </td>
+            <td class="tariffs__detail">
+              <p class="tariffs__value tariffs__value--yes">
+                <p class="visually-hidden">
+                  Имеется
+                </p>
+              </p>
+            </td>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+            <p class="tariffs___toogles slider__toogles">
+          <button class="tariffs___toogles" type="button">
+            1
+          </button>
+          <button class="slider__toogles slider__toogles_current" type="button">
+            2
+          </button>
+          <button class="slider__toogles" type="button">
+            3
+          </button>
+        </p>
+  </section>
+  <section class="contacts page-main__contacts">
+    <h2 class="visually-hidden">
+      Контакты
+    </h2>
+    <p class="contacts_text">
+      Остались вопросы?
+    </p>
+    <p class="contacts_text">
+      Свяжитесь с нами!
+    </p>
+    <ul class="contacts__list">
+      <li class="contacts_item">
+        <b class="contacts__title">
+          Звоните:
+        </b>
+        <a class="contacts__link" href="tel:+78125556666">
+          <span class="contacts__phone-phone">
+            <br>
+           +7 (812) 555-66-66
+          </span>
+        </a>
+      </li>
+      <li class="contacts__item">
+        <b class="contacts__title">
+          Пишите:
+        </b>
+        <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+          <span class="contacts__mail-mail">
+            <br>
+           mail@htmlacademy.ru
+          </span>
+        </a>
+      </li>
+      <li class="contacts__item">
+        <b class="contacts__title">
+          Приезжайте в гости:
+        </b>
+        <a class="contacts__link" href="#!">
+          <span class="contacts__adress-adress">
+            <br>
+           ул. Большая Конюшенная, 19/8
+          </span>
+        </a>
+      </li>
+    </ul>
+  </section>
+{% endblock %}

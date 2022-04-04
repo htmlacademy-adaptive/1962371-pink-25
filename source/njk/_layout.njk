@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк {{ title }}
+    </title>
+  </head>
+  <body class="page page__body">
+    <header class="page-header page__header">
+      <a class="logo page-header__logo" href="index.html" {{ 'aria-current="page"' if page == 'index' }}>
+        <img class="logo-image" src="img/pink.svg" width="74" height="23" alt="Логотип Pink">
+      </a>
+      <nav class="nav page-header__nav">
+        <ul class="nav page-header__nav">
+          <li class="nav__item">
+            <a class="nav__link {{ 'nav__link--current' if page == 'index' }}" href="index.html" {{ 'aria-current="page"' if page == 'index' }}>
+              Главная
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#!">
+               Фотографии
+             </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#!">
+              Конкурс
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#!">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="page-header__toogle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </header>
+    <main class="page-main page__main">
+      {% block main %}{% endblock %}
+    </main>
+
+    <footer class="page-footer page__footer">
+      <a class="logo page-footer__logo" href="index.html">
+        <img class="logo-image" src="img/pink.svg" width="74" height="23" alt="Логотип Pink" {{ 'aria-current="page"' if page == 'index' }}>
+      </a>
+      <ul class="socials page-footer__socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vkontakte" href="#!">
+            <p class="visually-hidden">VKontakte.</p>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="#!">
+            <p class="visually-hidden">Telegram.</p>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <p class="visually-hidden">YouTube.</p>
+          </a>
+        </li>
+      </ul>
+      <a class="logo-academy page-footer__logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
+         Разработано
+        <img class="logo-academy__image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy.">
+      </a>
+    </footer>
+  </body>
+</html>
