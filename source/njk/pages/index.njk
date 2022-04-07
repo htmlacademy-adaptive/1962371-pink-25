@@ -5,34 +5,34 @@
 {% block main %}
   <section class="promo page-main__promo">
     <h1 class="visually-hidden">
-        Pink.
+      Pink.
     </h1>
     <p class="promo__title">
-       Взгляните на жизнь иначе!
+      Взгляните на жизнь иначе!
     </p>
-    <a class="promo__button" href="" >
-       Скачать приложение
+    <a class="promo__button" href="#!">
+      Скачать приложение
     </a>
-    <ul class="store-links promo__store">
+    <ul class="store-links promo__store-links">
       <li class="store-links__item">
         <a class="store-links__link store-links__link--apple" href="#!">
-          <span class="visually-hidden">
+          <p class="visually-hidden">
             Apple.
-          </span>
+          </p>
         </a>
       </li>
       <li class="store-links__item">
         <a class="store-links__link store-links__link--android" href="#!">
-          <span class="visually-hidden">
+          <p class="visually-hidden">
             Android.
-          </span>
+          </p>
         </a>
       </li>
       <li class="store-links__item">
         <a class="store-links__link store-links__link--windows" href="#!">
-          <span class="visually-hidden">
-            Windows
-          </span>
+          <p class="visually-hidden">
+            Windows.
+          </p>
         </a>
       </li>
     </ul>
@@ -57,61 +57,49 @@
         Поднимает настроение
       </dt>
       <dd class="features__description">
-        Приложение позволит вам победить
-        <br>
-        осеннюю хандру и депрессию
-        <br>
-        буквально в несколько кликов!
+        Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
       </dd>
       <dt class="features__title">
         Меняет мир вокруг
       </dt>
       <dd class="features__description">
-        Сделайте снимок и украсьте его
-        <br>
-        смайликом или текстовой подписью,
-        <br>
-        чтобы усилить эффект
+        Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
       </dd>
       <dt class="features__title">
         Заводит новых друзей
       </dt>
       <dd class="features__description">
-        Ставьте лайки, комментируйте,
-        <br>
-        делитесь фотографиями с друзьями и
-        <br>
-        заводите новых
+        Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
       </dd>
     </dl>
   </section>
-  <section class="reviews page-main__reviews">
+  <section class="reviews page-main__reviews slider">
     <h2 class="visually-hidden">
       Отзывы.
     </h2>
-    <ul class="reviews__list slider">
-      <li class="reviews__item slider__list">
-        <blockquote class="reviews__info slider__item">
+    <ul class="reviews__list">
+      <li class="reviews__item slider__slide">
+        <blockquote class="reviews__info">
           <b class="reviews__autor">
             Николай Петров
           </b>
           <p class="reviews__text">
-           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
         </blockquote>
-        <p class="reviews__toogles slider__toogles">
-          <button class="slider__toogles slider__toogles_current" type="button">
-            1
-          </button>
-          <button class="slider__toogles" type="button">
-            2
-          </button>
-          <button class="slider__toogles" type="button">
-            3
-          </button>
-        </p>
       </li>
     </ul>
+    <p class="toggles slider__toggles">
+      <button class="slider__toggles slider__toggles--current" type="button">
+        1
+      </button>
+      <button class="slider__toggles" type="button">
+        2
+      </button>
+      <button class="slider__toggles" type="button">
+        3
+      </button>
+    </p>
   </section>
   <section class="tariffs page-main__tariffs slider">
     <h2 class="visually-hidden">
@@ -120,143 +108,141 @@
     <table class="tariffs__table">
       <thead class="tariffs__names">
         <tr class="tariffs__applications">
-          <th class="tariffs__name tariffs-invisibility">
+          <th class="tariffs__invisibility">
+          </th>
           <th class="tariffs__name">
             База
             <p class="tariffs__price">
-            1,99 USD
+              1,99 USD
             </p>
           </th>
           <th class="tariffs__name slider__name">
             Стандарт
             <span class="tariffs__hit">
-            Хит
+              Хит
             </span>
-           <p class="tariffs__price">
-            3,99 USD
+            <p class="tariffs__price">
+              3,99 USD
             </p>
           </th>
           <th class="tariffs__name">
             Анлим
             <p class="tariffs__price">
-            9,99 USD
+              9,99 USD
             </p>
           </th>
         </tr>
       </thead>
       <tbody class="tariffs__descriprions">
         <tr class="tariffs__description">
-          <th class="tariffs__bonus slider_bonus">
+          <th class="tariffs__bonus slider__slide">
             Розовый фильтр
-            <td class="tariffs__detail">
-              <p class="tariffs__value tariffs__value--yes">
-                <p class="visually-hidden">
-                  Имеется
-                </p>
-              </p>
-            </td>
-            <td class="tariffs__detail">
-              <p class="tariffs__value tariffs__value--yes">
-                <p class="visually-hidden">
-                  Имеется
-                </p>
-              </p>
-            </td>
-            <td class="tariffs__detail">
-              <p class="tariffs__value tariffs__value--yes">
-                <p class="visually-hidden">
-                  Имеется
-                </p>
-              </p>
-            </td>
           </th>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--yes">
+              <span class="visually-hidden">
+                Имеется.
+              </span>
+            </p>
+          </td>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--yes">
+              <span class="visually-hidden">
+                Имеется.
+              </span>
+            </p>
+          </td>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--yes">
+              <span class="visually-hidden">
+                Имеется.
+              </span>
+            </p>
+          </td>
         </tr>
         <tr class="tariffs__description">
           <th class="tariffs__bonus">
             Смайлики
-            <td class="tariffs__detail">
-              <p class="tariffs__value tariffs__value--no">
-                <p class="visually-hidden">
-                  Отсутствует
-                </p>
-              </p>
-            </td>
-            <td class="tariffs__detail">
-              <p class="tariffs__value tariffs__value--yes">
-                <p class="visually-hidden">
-                  Имеется
-                </p>
-              </p>
-            </td>
-            <td class="tariffs__detail">
-              <p class="tariffs__value tariffs__value--yes">
-                <p class="visually-hidden">
-                  Имеется
-                </p>
-              </p>
-            </td>
           </th>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--no">
+              <span class="visually-hidden">
+                Отсутствует.
+              </span>
+            </p>
+          </td>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--yes">
+              <span class="visually-hidden">
+                Имеется.
+              </span>
+            </p>
+          </td>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--yes">
+              <span class="visually-hidden">
+                Имеется.
+              </span>
+            </p>
+          </td>
         </tr>
         <tr class="tariffs__description">
           <th class="tariffs__bonus">
             Комментарии
-            <td class="tariffs__detail">
-              <p class="tariffs__value tariffs__value--no">
-                <p class="visually-hidden">
-                  Отсутствует
-                </p>
-              </p>
-            </td>
-            <td class="tariffs__detail">
-              <p class="tariffs__value tariffs__value--no">
-                <p class="visually-hidden">
-                  Отсутствует
-                </p>
-              </p>
-            </td>
-            <td class="tariffs__detail">
-              <p class="tariffs__value tariffs__value--yes">
-                <p class="visually-hidden">
-                  Имеется
-                </p>
-              </p>
-            </td>
           </th>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--no">
+              <span class="visually-hidden">
+                Отсутствует.
+              </span>
+            </p>
+          </td>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--no">
+              <span class="visually-hidden">
+                Отсутствует.
+              </span>
+            </p>
+          </td>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--yes">
+              <span class="visually-hidden">
+                Имеется.
+              </span>
+            </p>
+          </td>
         </tr>
       </tbody>
     </table>
-            <p class="tariffs___toogles slider__toogles">
-          <button class="tariffs___toogles" type="button">
-            1
-          </button>
-          <button class="slider__toogles slider__toogles_current" type="button">
-            2
-          </button>
-          <button class="slider__toogles" type="button">
-            3
-          </button>
-        </p>
+    <p class="toggles slider__toggles">
+      <button class="slider__toggles" type="button">
+        1
+      </button>
+      <button class="slider__toggles slider__toggles--current" type="button">
+        2
+      </button>
+      <button class="slider__toggles" type="button">
+        3
+      </button>
+    </p>
   </section>
   <section class="contacts page-main__contacts">
     <h2 class="visually-hidden">
-      Контакты
+      Контакты.
     </h2>
-    <p class="contacts_text">
+    <p class="contacts__text">
       Остались вопросы?
     </p>
-    <p class="contacts_text">
+    <p class="contacts__text">
       Свяжитесь с нами!
     </p>
     <ul class="contacts__list">
-      <li class="contacts_item">
+      <li class="contacts__item">
         <b class="contacts__title">
           Звоните:
         </b>
         <a class="contacts__link" href="tel:+78125556666">
-          <span class="contacts__phone-phone">
-            <br>
-           +7 (812) 555-66-66
-          </span>
+            +7 (812) 555-66-66
         </a>
       </li>
       <li class="contacts__item">
@@ -264,10 +250,7 @@
           Пишите:
         </b>
         <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
-          <span class="contacts__mail-mail">
-            <br>
-           mail@htmlacademy.ru
-          </span>
+            mail@htmlacademy.ru
         </a>
       </li>
       <li class="contacts__item">
@@ -276,8 +259,8 @@
         </b>
         <a class="contacts__link" href="#!">
           <span class="contacts__adress-adress">
-            <br>
-           ул. Большая Конюшенная, 19/8
+           <br>
+            ул. Большая Конюшенная, 19/8
           </span>
         </a>
       </li>
