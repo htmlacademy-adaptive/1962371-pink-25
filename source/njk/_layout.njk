@@ -18,17 +18,17 @@
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#!">
+            <a class="nav__link" href="catalog.html">
                Фотографии
              </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#!">
+            <a class="nav__link" href="form.html">
               Конкурс
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#!">
+            <a class="nav__link" href="https://htmlacademy.ru">
               HTML Academy
             </a>
           </li>
@@ -41,7 +41,6 @@
     <main class="page-main page__main">
       {% block main %}{% endblock %}
     </main>
-
     <footer class="page-footer page__footer">
       <a class="logo page-footer__logo" href="index.html">
         <img class="logo-image" src="img/pink.svg" width="74" height="23" alt="Логотип Pink." {{ 'aria-current="page"' if page == 'index' }}>
@@ -68,5 +67,6 @@
         <img class="logo-academy__image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy.">
       </a>
     </footer>
+    {% block modal %}{% endblock %}
   </body>
 </html>
