@@ -10,6 +10,9 @@
     <p class="promo__title">
       Взгляните на жизнь иначе!
     </p>
+    <picture class="promo__picture picture">
+    <img class="picture__image" src="img/pictures/phone-hand.jpg" width="320" height="462" alt="Телефон с рукой.">
+    </picture>
     <a class="promo__button" href="#!">
       Скачать приложение
     </a>
@@ -79,13 +82,16 @@
     </h2>
     <ul class="reviews__list">
       <li class="reviews__item slider__slide">
+        <picture class="reviews__picture picture">
+        <img class="picture__image" src="img/pictures/phone-smile.jpg" width="157" height="320" alt="Телефон со смайликом.">
+        </picture>
         <blockquote class="reviews__info">
-          <b class="reviews__autor">
+          <cite class="reviews__author">
             Николай Петров
-          </b>
-          <p class="reviews__text">
+          </cite>
+          <q class="reviews__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
+          </q>
         </blockquote>
       </li>
     </ul>
@@ -108,15 +114,15 @@
     <table class="tariffs__table">
       <thead class="tariffs__names">
         <tr class="tariffs__applications">
-          <th class="tariffs__invisibility">
+          <th class="tariffs__invisibility" scope="col">
           </th>
-          <th class="tariffs__name">
+          <th class="tariffs__name" scope="col">
             База
             <p class="tariffs__price">
               1,99 USD
             </p>
           </th>
-          <th class="tariffs__name slider__name">
+          <th class="tariffs__name slider__name" scope="col">
             Стандарт
             <span class="tariffs__hit">
               Хит
@@ -125,7 +131,7 @@
               3,99 USD
             </p>
           </th>
-          <th class="tariffs__name">
+          <th class="tariffs__name" scope="col">
             Анлим
             <p class="tariffs__price">
               9,99 USD
@@ -135,7 +141,7 @@
       </thead>
       <tbody class="tariffs__descriprions">
         <tr class="tariffs__description">
-          <th class="tariffs__bonus slider__slide">
+          <th class="tariffs__bonus slider__slide" scope="col">
             Розовый фильтр
           </th>
           <td class="tariffs__detail">
@@ -161,7 +167,7 @@
           </td>
         </tr>
         <tr class="tariffs__description">
-          <th class="tariffs__bonus">
+          <th class="tariffs__bonus" scope="col">
             Смайлики
           </th>
           <td class="tariffs__detail">
@@ -187,7 +193,7 @@
           </td>
         </tr>
         <tr class="tariffs__description">
-          <th class="tariffs__bonus">
+          <th class="tariffs__bonus" scope="col">
             Комментарии
           </th>
           <td class="tariffs__detail">
@@ -242,7 +248,7 @@
           Звоните:
         </b>
         <a class="contacts__link" href="tel:+78125556666">
-            +7 (812) 555-66-66
+          +7 (812) 555-66-66
         </a>
       </li>
       <li class="contacts__item">
@@ -250,7 +256,7 @@
           Пишите:
         </b>
         <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
-            mail@htmlacademy.ru
+          mail@htmlacademy.ru
         </a>
       </li>
       <li class="contacts__item">
@@ -259,7 +265,7 @@
         </b>
         <a class="contacts__link" href="#!">
           <span class="contacts__adress-adress">
-           <br>
+            <br>
             ул. Большая Конюшенная, 19/8
           </span>
         </a>
