@@ -4,10 +4,10 @@
 
 {% block main %}
 <section class="content">
-  <h1 class="content__slogan">
+  <h1 class="content__title">
     Конкурс на самое безбашенное путешествие с Пинк
   </h1>
-  <p class="content__discription">
+  <p class="content__description">
     Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
   </p>
   <form class="form content__slot" action="https://echo.htmlacademy.ru/" method="post">
@@ -16,26 +16,26 @@
         ФИО.
       </legend>
       <p class="data__item">
-        <label class="data__label" for="surname">
+        <label class="form__title" for="surname">
           Фамилия:
         </label>
-        <input class="data__input" id="surname" type="text" name="surname[]" placeholder="Укажите фамилию *" pattern="[А-Яа-яЁё]+" required>
+        <input class="data__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию *" pattern="[А-Яа-яЁё]+" required>
       </p>
       <p class="data__item">
-        <label class="data__label" for="name">
+        <label class="form__title" for="name">
           Имя:
         </label>
-        <input class="data__input" id="name" type="text" name="name[]" placeholder="Введите ваше имя *" pattern="[А-Яа-яЁё]+" required>
+        <input class="data__input" id="name" type="text" name="name" placeholder="Введите ваше имя *" pattern="[А-Яа-яЁё]+" required>
       </p>
       <p class="data__item">
-        <label class="data__label" for="patronymic">
+        <label class="form__title" for="patronymic">
           Отчество:
         </label>
-        <input class="data__input" id="patronymic" type="text" name="patronymic[]" placeholder="Ну и отчество тоже" pattern="[А-Яа-яЁё]+">
+        <input class="data__input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже" pattern=pattern="^[А-Яа-яЁё]+$">
       </p>
     </fieldset>
-    <fieldset class="checkers form__checkers">
-      <legend class="checkers__title">
+    <fieldset class="checkers form__set form__set--checkers">
+      <legend class="form__title">
         Ваши безбашенные достижения в путешествии
       </legend>
       <ul class="checkers__list">
@@ -82,20 +82,20 @@
         Контакты.
       </legend>
       <p class="data__item">
-        <label class="data__label" for="tel">
+        <label class="form__title" for="tel">
           Номер телефона
         </label>
         <input class="data__input" id="tel" type="tel" name="tel[]" placeholder="Номер, пожалуйста" pattern="^((8|\\+7)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}$">
       </p>
       <p class="data__item">
-        <label class="data__label" for="mail">
+        <label class="form__title" for="mail">
           Адрес почты
         </label>
         <input class="data__input" id="mail" type="email" name="email[]" placeholder="Введите почту *" required>
       </p>
     </fieldset>
-    <fieldset class="checkers form__checkers">
-      <legend class="checkers__title">
+    <fieldset class="checkers form__set form__set--checkers">
+      <legend class="form__title">
         С каким приложением путешествовали?
       </legend>
       <ul class="checkers__list">
@@ -122,24 +122,22 @@
     <fieldset class="data form__data">
       <legend class="visually-hidden">Описание эмоций.</legend>
       <p class="data__item">
-        <label class="data__label" for="emotions-text">
+        <label class="form__title" for="emotions-text">
           Опишите свои эмоции
         </label>
-        <textarea class="data__input" id="emotions-text" name="text" maxlength="1000" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <textarea class="data__input data__input--message" id="emotions-text" name="text" maxlength="1000" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </p>
     </fieldset>
     <button class="button content__button" type="submit">
       Отправить форму
     </button>
-      <p class="content__discription">
-        <span class="content__sign">
-          *
-        </span>
-          — обязательные поля
+      <p class="content__description">
+        <span class="content__sign">*</span>— обязательные поля
       </p>
   </form>
 </section>
 {% endblock %}
+
 {% block modal %}
 <section class="modal">
   <h2 class="modal__title">
@@ -161,7 +159,7 @@
   <p class="modal__desctiprion">
     Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
   </p>
-  <footer class="modal__footer">
+  <footer class="modal__footer modal__footer--background">
     <button class="button modal__button" type="button">
       Ок
     </button>
