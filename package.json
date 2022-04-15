@@ -24,6 +24,7 @@
     "postcss-reporter": "7.0.5",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11",
+    "stylelint-order-htmlacademy": "2.0.6",
     "terser": "5.12.1"
   },
   "scripts": {

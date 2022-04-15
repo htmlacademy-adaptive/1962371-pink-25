@@ -5,9 +5,7 @@
 {% block main %}
 <section class="content">
   <h1 class="content__title">
-  <a class="content__link" href="catalog.html">
     Фотографии пользователей
-  </a>
   </h1>
   <p class="content__description">
     Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
@@ -47,17 +45,17 @@
       <picture class="photo__user picture">
         <img class="picture__image" src="img/photo-people/photo-car.jpg" width="280" height="180" alt="Автомобиль.">
       </picture>
-        <blockquote class="photo__info">
-          <cite class="photo__author">
-            Левон
-            <time class="photo__time" datetime="2022-04-08T00:00:00">
-              (5 часов назад)
-            </time>
-          </cite>
-          <q class="photo__description">
-            Вчера он на луну летал, сегодня в руки к нам попал.
-          </q>
-        </blockquote>
+      <blockquote class="photo__info">
+        <cite class="photo__author">
+          Левон
+          <time class="photo__time" datetime="2022-04-08T00:00:00">
+            (5 часов назад)
+          </time>
+        </cite>
+        <q class="photo__description">
+          Вчера он на луну летал, сегодня в руки к нам попал.
+        </q>
+      </blockquote>
       <form class="photo__likes-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="hidden" name="photo" value="car">
         <button class="photo__likes-submit" type="submit" name="user" value="1">
@@ -219,7 +217,8 @@
       <label class="visually-hidden" for="add">
         Добавить фотографию.
       </label>
-      <input class="visually-hidden" id="add" name="image" type="file" accept="image/jpeg,image/png" required>    </p>
+      <input class="visually-hidden" id="add" name="image" type="file" accept="image/jpeg,image/png" required>
+    </p>
     <p class="post-photo__filter">
       <label class="visually-hidden" for="crop">
         Обрезать фотографию.
