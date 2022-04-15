@@ -2,8 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк &gt; {{ title }}
-    </title>
+    <title>HTML Academy: Пинк &gt; {{ title }}</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="page-header page__header">
@@ -19,8 +19,8 @@
           </li>
           <li class="nav__item">
             <a class="nav__link" href="catalog.html">
-               Фотографии
-             </a>
+              Фотографии
+            </a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="form.html">
@@ -63,10 +63,16 @@
         </li>
       </ul>
       <a class="logo-academy page-footer__logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
-         Разработано
+        Разработано
         <img class="logo-academy__image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy.">
       </a>
     </footer>
     {% block modal %}{% endblock %}
+
+    <script>
+      window.pinegladePP = { breakpoints: [320, 660, 1200] };
+    </script>
+    <script src="https://efiand.github.io/pineglade-pp/pineglade-pp.min.js">
+    </script>
   </body>
 </html>
