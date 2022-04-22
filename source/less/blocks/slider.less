@@ -1,0 +1,39 @@
+.slider {
+  padding: 0 0 30px;
+
+  &--alter {
+    padding-bottom: 39px;
+    background-color: var(--color-lightgrey);
+
+    &::before {
+      content: "";
+      display: block;
+      height: 20px;
+      margin: 0 0 82px;
+      background-image: var(--skew-gradient);
+    }
+  }
+}
+
+.slider__wrapper {
+  overflow: hidden;
+}
+
+.slider__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 300%;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider__table {
+  width: calc(300% - 120px);
+  margin: 0 20px 33px;
+  table-layout: fixed;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider__togglers {
+  margin: 0;
+}

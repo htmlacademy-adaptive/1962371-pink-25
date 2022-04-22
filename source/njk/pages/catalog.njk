@@ -4,15 +4,17 @@
 
 {% block main %}
 <section class="content">
-  <h1 class="content__title">
-    Фотографии пользователей
-  </h1>
-  <p class="content__description">
-    Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+  <header class="content__header content__header--catalog">
+    <h1 class="content__title">
+      Фотографии пользователей
+    </h1>
+  </header>
+  <p class="content__description content__description--catalog">
+    Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?
   </p>
   <ul class="photo content__slot">
-    <li class="photo__item">
-      <span class="photo__favorites">
+    <li class="photo__item photo__item--best">
+      <span class="photo__best-label">
         Панорама дня
       </span>
       <picture class="photo__user photo__user--best picture">
@@ -26,7 +28,7 @@
           </time>
         </cite>
         <p class="photo__description">
-          Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+          Прыгать или нет? Напишите в комментарии свой совет и<br>смотрите прямую трансляцию в перископе, задавайте свои вопросы!
         </p>
       </blockquote>
       <form class="photo__likes-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -52,9 +54,9 @@
             (5 часов назад)
           </time>
         </cite>
-        <q class="photo__description">
+        <p class="photo__description">
           Вчера он на луну летал, сегодня в руки к нам попал.
-        </q>
+        </p>
       </blockquote>
       <form class="photo__likes-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="hidden" name="photo" value="car">
@@ -79,9 +81,9 @@
               (12 часов назад)
             </time>
           </cite>
-          <q class="photo__description">
+          <p class="photo__description">
             Соседи будут рады!
-          </q>
+          </p>
         </blockquote>
       <form class="photo__likes-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="hidden" name="photo" value="drums">
@@ -106,9 +108,9 @@
               (20 часов назад)
             </time>
           </cite>
-          <q class="photo__description">
+          <p class="photo__description">
             Здесь могла быть ваша цитата о высоком и вечном.
-          </q>
+          </p>
         </blockquote>
       <form class="photo__likes-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="hidden" name="photo" value="window">
@@ -133,9 +135,9 @@
               (25 часов назад)
             </time>
           </cite>
-          <q class="photo__description">
+          <p class="photo__description">
             Самая кубанская в мире!
-          </q>
+          </p>
         </blockquote>
       <form class="photo__likes-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="hidden" name="photo" value="market">
@@ -160,9 +162,9 @@
               (40 часов назад)
             </time>
           </cite>
-          <q class="photo__description">
+          <p class="photo__description">
             Где снег-то?
-          </q>
+          </p>
         </blockquote>
       <form class="photo__likes-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="hidden" name="photo" value="legs">
@@ -187,9 +189,9 @@
               (45 часов назад)
             </time>
           </cite>
-          <q class="photo__description">
+          <p class="photo__description">
             Всем GM и взаимные лайки!
-          </q>
+          </p>
         </blockquote>
       <form class="photo__likes-form" action="https://echo.htmlacademy.ru/" method="post">
         <input type="hidden" name="photo" value="wing">
@@ -205,42 +207,61 @@
     </li>
   </ul>
   <p class="content__description">
-    Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+    Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!
   </p>
 </section>
 <section class="post-photo page-main__add">
-  <h2 class="visually_hidden">
+  <h2 class="visually-hidden">
     Добавление фотографий.
   </h2>
   <form class="post-photo__form" action="https://echo.htmlacademy.ru/" method="post">
     <p class="post-photo__file">
-      <label class="visually-hidden" for="add">
-        Добавить фотографию.
-      </label>
       <input class="visually-hidden" id="add" name="image" type="file" accept="image/jpeg,image/png" required>
-    </p>
-    <p class="post-photo__filter">
-      <label class="visually-hidden" for="crop">
-        Обрезать фотографию.
+      <label class="post-photo__chooser" for="add">
+        <span class="visually-hidden">
+          Добавить файл.
+        </span>
       </label>
-      <input class="visually-hidden" id="crop" name="crop" type="range" min="0" max="100" step="1" value="80">
     </p>
-    <p class="post-photo__filter">
-      <label class="visually-hidden" for="brightness">
-        Изменить яркость.
-      </label>
-      <input class="visually-hidden" id="brightness" name="brightness" type="range" min="0" max="100" step="1" value="20">
-    </p>
-    <p class="post-photo__filter">
-      <label class="visually-hidden" for="contrast">
-        Изменить контраст.
-      </label>
-      <input class="visually-hidden" id="contrast" name="contrast" type="range" min="0" max="100" step="1" value="50">
-    </p>
-    <button class="post-photo__button" type="submit">
+    <div class="post-photo__filters">
+      <p class="post-photo__filter post-photo__filter--current">
+        <button class="post-photo__toggler post-photo__toggler--crop" type="button">
+          <span class="visually-hidden">
+            Переключить режим на обрезать.
+          </span>
+        </button>
+        <label class="visually-hidden" for="crop">
+          Обрезать фотографию.
+        </label>
+        <input class="post-photo__range range" id="crop" name="crop" type="range" min="0" max="100" step="1" value="80">
+      </p>
+      <p class="post-photo__filter">
+        <button class="post-photo__toggler post-photo__toggler--fill" type="button">
+          <span class="visually-hidden">
+            Переключить режим на заливку.
+          </span>
+        </button>
+        <label class="visually-hidden" for="fill">
+          Изменить заливку.
+        </label>
+        <input class="post-photo__range range" id="fill" name="fill" type="range" min="0" max="100" step="1" value="20">
+      </p>
+      <p class="post-photo__filter">
+        <button class="post-photo__toggler post-photo__toggler--contrast" type="button">
+          <span class="visually-hidden">
+            Переключить режим на изменить контраст.
+          </span>
+        </button>
+        <label class="visually-hidden" for="contrast">
+          Изменить контраст.
+        </label>
+        <input class="post-photo__range range" id="contrast" name="contrast" type="range" min="0" max="100" step="1" value="50">
+      </p>
+    </div>
+    <button class="post-photo__button button" type="submit">
       Запостить
     </button>
-    <button class="post-photo__button post-photo__button--reset" type="reset">
+    <button class="post-photo__button post-photo__button--reset button" type="reset">
       Отмена
     </button>
   </form>

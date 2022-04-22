@@ -7,13 +7,15 @@
     <h1 class="visually-hidden">
       Pink.
     </h1>
-    <p class="promo__title">
-      Взгляните на жизнь иначе!
-    </p>
-    <picture class="promo__picture picture">
-      <img class="picture__image" src="img/pictures/phone-hand.jpg" width="320" height="462" alt="Телефон с запущенным приложением Pink в руке.">
-    </picture>
-    <a class="promo__button" href="#!">
+    <div class="promo__header">
+      <p class="promo__title">
+        Взгляните на жизнь иначе!
+      </p>
+      <picture class="promo__picture picture">
+        <img class="picture__image" src="img/pictures/promo-mobile.png" width="320" height="286" alt="Телефон с запущенным приложением Pink в руке.">
+      </picture>
+    </div>
+    <a class="promo__button button" href="#!">
       Скачать приложение
     </a>
     <ul class="store-links promo__store-links">
@@ -56,183 +58,235 @@
       Нам есть, что вам предложить!
     </p>
     <dl class="features__list">
-      <dt class="features__title">
-        Поднимает настроение
-      </dt>
-      <dd class="features__description">
-        Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-      </dd>
-      <dt class="features__title">
-        Меняет мир вокруг
-      </dt>
-      <dd class="features__description">
-        Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-      </dd>
-      <dt class="features__title">
-        Заводит новых друзей
-      </dt>
-      <dd class="features__description">
-        Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-      </dd>
+      <div class="features__group features__group--1" >
+        <dt class="features__title">
+          Поднимает настроение
+        </dt>
+        <dd class="features__description">
+          Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+        </dd>
+      </div>
+      <div class="features__group features__group--2">
+        <dt class="features__title">
+          Меняет мир вокруг
+        </dt>
+        <dd class="features__description">
+          Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+        </dd>
+      </div>
+      <div class="features__group features__group--3">
+        <dt class="features__title">
+          Заводит новых друзей
+        </dt>
+        <dd class="features__description">
+          Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+        </dd>
+      </div>
     </dl>
   </section>
   <section class="reviews page-main__reviews slider">
     <h2 class="visually-hidden">
       Отзывы.
     </h2>
-    <ul class="reviews__list">
-      <li class="reviews__item slider__slide">
-        <picture class="reviews__picture picture">
-          <img class="picture__image" src="img/pictures/phone-smile.jpg" width="157" height="320" alt="Телефон с запущенным приложением Pink.">
-        </picture>
-        <blockquote class="reviews__info">
-          <cite class="reviews__author">
-            Николай Петров
-          </cite>
-          <q class="reviews__text">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </q>
-        </blockquote>
+    <div class="slider__wrapper">
+      <ul class="reviews__list slider__list">
+          <li class="reviews__item">
+            <blockquote class="reviews__info">
+              <cite class="reviews__author">
+                Николай Петров
+              </cite>
+              <q class="reviews__text">
+                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+              </q>
+            </blockquote>
+          </li>
+          <li class="reviews__item">
+            <blockquote class="reviews__info">
+              <cite class="reviews__author">
+                Евгений Сидоров
+              </cite>
+              <q class="reviews__text">
+                Это приложение меняет не только мир но и все окружение! Пользуюсь и не жалею, всем советую!!
+              </q>
+            </blockquote>
+          </li>
+          <li class="reviews__item">
+            <blockquote class="reviews__info">
+              <cite class="reviews__author">
+                Андрей Качура
+              </cite>
+              <q class="reviews__text">
+                Друзья посоветовали скачать это приложение! Все нравится. Ставлю 5 звезд!
+              </q>
+            </blockquote>
+          </li>
+      </ul>
+    </div>
+    <ul class="togglers slider__togglers">
+      <li class="togglers__list">
+        <button class="togglers__item togglers__item--current" type="button">
+          <span class="visually-hidden">
+            Первый отзыв.
+          </span>
+        </button>
+      </li>
+      <li class="togglers__list">
+      <button class="togglers__item" type="button">
+        <span class="visually-hidden">
+          Второй отзыв.
+        </span>
+      </button>
+      </li>
+      <li class="togglers__list">
+      <button class="togglers__item" type="button">
+        <span class="visually-hidden">
+          Третий отзыв.
+        </span>
+      </button>
       </li>
     </ul>
-    <p class="toggles slider__toggles">
-      <button class="slider__toggles slider__toggles--current" type="button">
-        1
-      </button>
-      <button class="slider__toggles" type="button">
-        2
-      </button>
-      <button class="slider__toggles" type="button">
-        3
-      </button>
-    </p>
   </section>
-  <section class="tariffs page-main__tariffs slider">
+  <section class="tariffs page-main__tariffs slider slider--alter">
     <h2 class="visually-hidden">
       Тарифы.
     </h2>
-    <table class="tariffs__table">
-      <thead class="tariffs__names">
-        <tr class="tariffs__applications">
-          <th class="tariffs__invisibility" scope="row">
-            <span class="visually-hidden">
-            </span>
-          </th>
-          <th class="tariffs__name" scope="row">
-            База
-            <p class="tariffs__price">
-              1,99 USD
-            </p>
-          </th>
-          <th class="tariffs__name slider__name" scope="row">
-            Стандарт
-            <span class="tariffs__hit">
-              Хит
-            </span>
-            <p class="tariffs__price">
-              3,99 USD
-            </p>
-          </th>
-          <th class="tariffs__name" scope="row">
-            Анлим
-            <p class="tariffs__price">
-              9,99 USD
-            </p>
-          </th>
-        </tr>
-      </thead>
-      <tbody class="tariffs__descriprions">
-        <tr class="tariffs__description">
-          <th class="tariffs__bonus slider__slide" scope="row">
-            Розовый фильтр
-          </th>
-          <td class="tariffs__detail">
-            <p class="tariffs__value tariffs__value--yes">
+    <div class="slider__wrapper">
+      <table class="tariffs__table slider__table" style="transform: translateX(-33.3333%)">
+        <thead class="tariffs__names">
+          <tr class="tariffs__applications">
+            <th class="tariffs__invisibility" scope="row">
               <span class="visually-hidden">
-                Имеется.
+                Свойства.
               </span>
-            </p>
-          </td>
-          <td class="tariffs__detail">
-            <p class="tariffs__value tariffs__value--yes">
-              <span class="visually-hidden">
-                Имеется.
+            </th>
+            <th class="tariffs__name" scope="col">
+              База
+              <p class="tariffs__price">
+                1,99 USD
+              </p>
+            </th>
+            <th class="labelled tariffs__name tariffs__name--current" scope="col">
+              Стандарт
+              <span class="labelled__hit">
+                Хит
               </span>
-            </p>
-          </td>
-          <td class="tariffs__detail">
-            <p class="tariffs__value tariffs__value--yes">
-              <span class="visually-hidden">
-                Имеется.
-              </span>
-            </p>
-          </td>
-        </tr>
-        <tr class="tariffs__description">
-          <th class="tariffs__bonus" scope="row">
-            Смайлики
-          </th>
-          <td class="tariffs__detail">
-            <p class="tariffs__value tariffs__value--no">
-              <span class="visually-hidden">
-                Отсутствует.
-              </span>
-            </p>
-          </td>
-          <td class="tariffs__detail">
-            <p class="tariffs__value tariffs__value--yes">
-              <span class="visually-hidden">
-                Имеется.
-              </span>
-            </p>
-          </td>
-          <td class="tariffs__detail">
-            <p class="tariffs__value tariffs__value--yes">
-              <span class="visually-hidden">
-                Имеется.
-              </span>
-            </p>
-          </td>
-        </tr>
-        <tr class="tariffs__description">
-          <th class="tariffs__bonus" scope="row">
-            Комментарии
-          </th>
-          <td class="tariffs__detail">
-            <p class="tariffs__value tariffs__value--no">
-              <span class="visually-hidden">
-                Отсутствует.
-              </span>
-            </p>
-          </td>
-          <td class="tariffs__detail">
-            <p class="tariffs__value tariffs__value--no">
-              <span class="visually-hidden">
-                Отсутствует.
-              </span>
-            </p>
-          </td>
-          <td class="tariffs__detail">
-            <p class="tariffs__value tariffs__value--yes">
-              <span class="visually-hidden">
-                Имеется.
-              </span>
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="toggles slider__toggles">
-      <button class="slider__toggles" type="button">
-        1
+              <p class="tariffs__price">
+                3,99 USD
+              </p>
+            </th>
+            <th class="tariffs__name" scope="col">
+              Анлим
+              <p class="tariffs__price">
+                9,99 USD
+              </p>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="tariffs__descriprions">
+          <tr class="tariffs__description">
+            <th class="tariffs__detail tariffs__detail--current" scope="row">
+              Розовый фильтр
+            </th>
+            <td class="tariffs__detail tariffs__detail--current" data-title="Розовый фильтр">
+              <p class="tariffs__value tariffs__value--yes">
+                <span class="visually-hidden">
+                  Имеется.
+                </span>
+              </p>
+            </td>
+            <td class="tariffs__detail tariffs__detail--current" data-title="Розовый фильтр">
+              <p class="tariffs__value tariffs__value--yes">
+                <span class="visually-hidden">
+                  Имеется.
+                </span>
+              </p>
+            </td>
+            <td class="tariffs__detail tariffs__detail--current" data-title="Розовый фильтр">
+              <p class="tariffs__value tariffs__value--yes">
+                <span class="visually-hidden">
+                  Имеется.
+                </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="tariffs__description">
+            <th class="tariffs__detail" scope="row">
+              Смайлики
+            </th>
+            <td class="tariffs__detail" data-title="Смайлики">
+              <p class="tariffs__value tariffs__value--no">
+                <span class="visually-hidden">
+                  Отсутствует.
+                </span>
+              </p>
+            </td>
+            <td class="tariffs__detail" data-title="Смайлики">
+              <p class="tariffs__value tariffs__value--yes">
+                <span class="visually-hidden">
+                  Имеется.
+                </span>
+              </p>
+            </td>
+            <td class="tariffs__detail" data-title="Смайлики">
+              <p class="tariffs__value tariffs__value--yes">
+                <span class="visually-hidden">
+                  Имеется.
+                </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="tariffs__description">
+            <th class="tariffs__detail" scope="row">
+              Комментарии
+            </th>
+            <td class="tariffs__detail" data-title="Комментарии">
+              <p class="tariffs__value tariffs__value--no">
+                <span class="visually-hidden">
+                  Отсутствует.
+                </span>
+              </p>
+            </td>
+            <td class="tariffs__detail" data-title="Комментарии">
+              <p class="tariffs__value tariffs__value--no">
+                <span class="visually-hidden">
+                  Отсутствует.
+                </span>
+              </p>
+            </td>
+            <td class="tariffs__detail" data-title="Комментарии">
+              <p class="tariffs__value tariffs__value--yes">
+                <span class="visually-hidden">
+                  Имеется.
+                </span>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="togglers slider__togglers">
+      <li class="togglers__list">
+        <button class="togglers__item" type="button">
+          <span class="visually-hidden">
+            Первый тариф.
+          </span>
+        </button>
+      </li>
+      <li class="togglers__list">
+      <button class="togglers__item togglers__item--current" type="button">
+        <span class="visually-hidden">
+          Второй тариф.
+        </span>
       </button>
-      <button class="slider__toggles slider__toggles--current" type="button">
-        2
+      </li>
+      <li class="togglers__list">
+      <button class="togglers__item" type="button">
+        <span class="visually-hidden">
+          Третий тариф.
+        </span>
       </button>
-      <button class="slider__toggles" type="button">
-        3
-      </button>
-    </p>
+      </li>
+    </ul>
   </section>
   <section class="contacts page-main__contacts">
     <h2 class="visually-hidden">
@@ -246,31 +300,31 @@
     </p>
     <ul class="contacts__list">
       <li class="contacts__item">
-        <b class="contacts__title">
+        <p class="contacts__title">
           Звоните:
-        </b>
+        </p>
         <a class="contacts__link" href="tel:+78125556666">
           +7 (812) 555-66-66
         </a>
       </li>
       <li class="contacts__item">
-        <b class="contacts__title">
+        <p class="contacts__title">
           Пишите:
-        </b>
+        </p>
         <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
           mail@htmlacademy.ru
         </a>
       </li>
       <li class="contacts__item">
-        <b class="contacts__title">
+        <p class="contacts__title">
           Приезжайте в гости:
-        </b>
+        </p>
         <a class="contacts__link" href="#!">
           <span class="contacts__adress-adress">
-            <br>
             ул. Большая Конюшенная, 19/8
           </span>
         </a>
+        <div class="contacts__map"></div>
       </li>
     </ul>
   </section>

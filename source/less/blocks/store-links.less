@@ -1,0 +1,35 @@
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.store-links__item {
+  margin: 0 6px;
+}
+
+.store-links__link {
+  display: block;
+  width: 47px;
+  height: 56px;
+  padding: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  &--apple {
+    background-image: url("../img/icons/icon-apple.svg");
+  }
+
+  &--android {
+    background-image: url("../img/icons/icon-android.svg");
+    background-position: 50% 16px;
+  }
+
+  &--windows {
+    background-image: url("../img/icons/icon-windows.svg");
+    background-position: 50% 22px;
+  }
+}

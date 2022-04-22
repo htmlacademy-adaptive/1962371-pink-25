@@ -10,6 +10,9 @@
       <a class="logo page-header__logo" href="index.html" {{ 'aria-current="page"' if page == 'index' }}>
       <img class="logo__image" src="img/logo/pink.svg" width="74" height="23" alt="Логотип Pink.">
       </a>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Переключить режим видимости меню.</span>
+      </button>
       <nav class="nav page-header__nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -34,9 +37,6 @@
           </li>
         </ul>
       </nav>
-      {# <button class="page-header__toogle" type="button">
-        <span class="visually-hidden">Переключить режим видимости меню.</span>
-      </button> #}
     </header>
     <main class="page-main page__main">
       {% block main %}{% endblock %}

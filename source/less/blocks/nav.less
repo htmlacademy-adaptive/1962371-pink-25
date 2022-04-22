@@ -16,7 +16,6 @@
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  color: inherit;
   text-transform: uppercase;
   text-decoration: none;
   border-top: 1px solid var(--color-white-15);
@@ -27,5 +26,8 @@
 
   &:active {
     color: var(--color-pink-30);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2ms;
+    transition-property: color, opacity, background-color, border-color, box-shadow;
   }
 }
