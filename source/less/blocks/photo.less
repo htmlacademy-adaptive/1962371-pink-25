@@ -1,0 +1,99 @@
+.photo {
+  margin: 0;
+  padding: 0 20px;
+  list-style-type: none;
+  line-height: 24px;
+}
+
+.photo__user {
+  display: block;
+
+  &--best {
+    margin: 0 -20px;
+  }
+}
+
+.photo__item {
+  margin-bottom: 20px;
+  background-color: var(--color-lightgrey);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.photo__item--best {
+  position: relative;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.photo__best-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 20px 7px 19px;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  color: var(--color-white);
+  text-transform: uppercase;
+  background-color: var(--color-pink);
+}
+
+.photo__info {
+  margin: 0;
+  padding: 17px 10px 11px 17px;
+}
+
+.photo__description {
+  margin: 0;
+}
+
+.photo__author {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.photo__time {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.photo__likes-form {
+  display: flex;
+  padding: 0 17px 19px;
+  color: var(--color-pink);
+}
+
+.photo__likes {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.photo__likes-submit {
+  margin-right: 19px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 12px;
+    background-color: var(--color-pink);
+    mask-image: url("../img/icons/icon-heart.svg");
+  }
+
+  &:hover::before {
+    background-color: var(--color-pink-30);
+  }
+
+  &:active::before {
+    background-color: var(--color-pink-10);
+  }
+}
