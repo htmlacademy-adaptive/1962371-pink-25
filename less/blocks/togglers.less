@@ -1,0 +1,46 @@
+.togglers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.togglers__item {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin: auto;
+    background-color: var(--color-lightblue-30);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &--current::before {
+    background-color: var(--color-white);
+    box-shadow: 0 0 0 3px var(--color-lightblue);
+    cursor: default;
+  }
+
+  &:hover::before {
+    background-color: var(--color-lightblue-60);
+  }
+
+  &:active::before {
+    background-color: var(--color-lightblue-10);
+  }
+
+  &--current:hover::before,
+  &--current:active::before {
+    background-color: var(--color-white);
+  }
+}

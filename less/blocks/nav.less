@@ -1,0 +1,33 @@
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--color-black);
+}
+
+.nav__item {
+  border-bottom: 1px solid var(--color-black);
+}
+
+.nav__link {
+  display: block;
+  padding: 15px 23px 17px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: 1px solid var(--color-white-15);
+
+  &:hover {
+    color: var(--color-pink);
+  }
+
+  &:active {
+    color: var(--color-pink-30);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2ms;
+    transition-property: color, opacity, background-color, border-color, box-shadow;
+  }
+}
