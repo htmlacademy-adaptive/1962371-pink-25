@@ -14,18 +14,17 @@
 }
 
 .photo__item {
+  position: relative;
   margin-bottom: 20px;
   background-color: var(--color-lightgrey);
+
+  &--pp {
+    margin-bottom: 22px;  //для попадания в ПП
+  }
 
   &:last-of-type {
     margin-bottom: 0;
   }
-}
-
-.photo__item--best {
-  position: relative;
-  font-weight: 400;
-  line-height: 24px;
 }
 
 .photo__best-label {
