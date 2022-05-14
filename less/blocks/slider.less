@@ -1,9 +1,25 @@
 .slider {
   padding: 0 0 30px;
 
+  @media @tablet {
+    padding-bottom: 7px;
+  }
+
+  @media @desktop {
+    position: relative;
+  }
+
   &--alter {
     padding-bottom: 39px;
     background-color: var(--color-lightgrey);
+
+    @media @tablet-desktop {
+      padding-bottom: 35px;
+    }
+
+    @media @desktop {
+      padding-bottom: 63px;
+    }
 
     &::before {
       content: "";
@@ -11,12 +27,29 @@
       height: 20px;
       margin: 0 0 82px;
       background-image: var(--skew-gradient);
+
+      @media @tablet-desktop {
+        height: 40px;
+        margin-bottom: 58px;
+      }
+
+      @media @desktop {
+        height: 100px;
+      }
     }
   }
 }
 
 .slider__wrapper {
   overflow: hidden;
+
+  &--alter {
+    @media @desktop {
+      width: 980px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }
 
 .slider__list {
@@ -30,10 +63,83 @@
 .slider__table {
   width: calc(300% - 120px);
   margin: 0 20px 33px;
-  table-layout: fixed;
+  transform: translateX(-33.3333%);
   transition: transform 0.3s ease-in-out;
+
+  @media @mobile {
+    table-layout: fixed;
+  }
+
+  @media @tablet-desktop {
+    width: calc(100% - 42px);
+    margin-right: 22px;
+    margin-left: 22px;
+    transform: none;
+  }
+
+  @media @desktop {
+    width: calc(100% - 40px);
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 
 .slider__togglers {
   margin: 0;
+}
+
+.slider .slider__togglers--list {
+  @media @desktop {
+    display: none;
+  }
+}
+
+.slider__ring {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: 1;
+  width: 21px;
+  height: 40px;
+  margin: 30px 20px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    transition: background-color 0.3s ease-in-out;
+    mask-image: url("../img/icons/icon-arrow.svg");
+    mask-size: cover;
+  }
+
+  &:hover::before {
+    background-color: var(--color-lightblue-60);
+  }
+
+  &:active::before {
+    background-color: var(--color-lightblue-10);
+  }
+
+  &--next {
+    right: 0;
+    left: auto;
+  }
+
+  &--prev {
+    &::before {
+      transform: scaleX(-1);
+    }
+  }
+
+  @media @mobile-tablet {
+    display: none;
+  }
 }
