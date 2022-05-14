@@ -2,12 +2,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 39px;
   padding: 0;
   list-style: none;
+
+  @media @tablet {
+    margin: -6px 29px 5px 0;
+  }
+
+  @media @desktop {
+    margin-bottom: 0;
+  }
 }
 
 .socials__item {
   margin: 9px 0 0 9px;
+
+  @media @desktop {
+    margin: 9px -3px 0 13px;
+  }
 }
 
 .socials__link {

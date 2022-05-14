@@ -96,7 +96,7 @@
         <input class="data__input" id="mail" type="email" name="email[]" placeholder="Введите почту *" required>
       </p>
     </fieldset>
-    <fieldset class="checkers form__set form__set-model form__set--checkers">
+    <fieldset class="checkers form__set form__set-model form__set--radio">
       <legend class="form__title form__title-model">
         С каким приложением путешествовали?
       </legend>
@@ -121,11 +121,11 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="data form__data form__data--emotions">
-      <legend class="visually-hidden">Описание эмоций.</legend>
+    <fieldset class="data form__data">
+      <legend class="form__title form__title--emotions">Опишите свои эмоции</legend>
       <p class="data__item">
-        <label class="form__label form__label--emotions" for="emotions-text">
-          Опишите свои эмоции
+        <label class="visually-hidden" for="emotions-text">
+          Описание эмоций.
         </label>
         <textarea class="data__input data__input--message" id="emotions-text" name="text" maxlength="1000" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </p>
@@ -143,13 +143,8 @@
 {% endblock %}
 
 {% block modal %}
-<div class="modal-container modal-container--success">
-  <a href="#" class="modal-container__back">
-    <span class="visually-hidden">
-      Закрыть окно.
-    </span>
-  </a>
-  <section class="modal">
+<section  class="modal modal--success">
+  <div class="modal__inner">
     <h2 class="modal__title">
       Ваша заявка отправлена
     </h2>
@@ -161,15 +156,10 @@
         Закрыть окно
       </button>
     </footer>
-  </section>
-</div>
-<div class="modal-container modal-container--error">
-  <a href="#" class="modal-container__back">
-    <span class="visually-hidden">
-      Закрыть окно.
-    </span>
-  </a>
-  <section class="modal">
+  </div>
+</section>
+<section  class="modal modal--error">
+  <div class="modal__inner">
     <h2 class="modal__title">
       Что-то пошло не так!
     </h2>
@@ -181,6 +171,6 @@
         Ок
       </button>
     </footer>
-  </section>
-</div>
+  </div>
+</section>
 {% endblock %}

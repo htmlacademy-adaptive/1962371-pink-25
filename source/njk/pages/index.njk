@@ -4,48 +4,50 @@
 
 {% block main %}
   <section class="promo page-main__promo">
-    <h1 class="visually-hidden">
-      Pink.
-    </h1>
-    <div class="promo__header">
-      <p class="promo__title">
-        Взгляните на жизнь иначе!
-      </p>
-      <picture class="promo__picture picture">
-        <img class="picture__image" src="img/pictures/promo-mobile.png" width="320" height="286" alt="Телефон с запущенным приложением Pink в руке.">
-      </picture>
+    <div class="page-main__bottom">
+      <h1 class="visually-hidden">
+        Pink.
+      </h1>
+      <div class="promo__header">
+        <p class="promo__title">
+          Взгляните на&nbsp;жизнь иначе!
+        </p>
+        <picture class="promo__picture picture">
+          <img class="picture__image" src="img/pictures/promo-mobile.png" alt="Телефон с запущенным приложением Pink в руке.">
+        </picture>
+      </div>
+      <div class="page-main__links">
+        <a class="promo__button button" href="#!">
+          Скачать приложение
+        </a>
+        <ul class="store-links promo__store-links">
+          <li class="store-links__item">
+            <a class="store-links__link store-links__link--apple" href="#!">
+              <p class="visually-hidden">
+                Apple.
+              </p>
+            </a>
+          </li>
+          <li class="store-links__item">
+            <a class="store-links__link store-links__link--android" href="#!">
+              <p class="visually-hidden">
+                Android.
+              </p>
+            </a>
+          </li>
+          <li class="store-links__item">
+            <a class="store-links__link store-links__link--windows" href="#!">
+              <p class="visually-hidden">
+                Windows.
+              </p>
+            </a>
+          </li>
+        </ul>
+        <p class="promo__description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows&nbsp;8
+        </p>
+      </div>
     </div>
-    <a class="promo__button button" href="#!">
-      Скачать приложение
-    </a>
-    <ul class="store-links promo__store-links">
-      <li class="store-links__item">
-        <a class="store-links__link store-links__link--apple" href="#!">
-          <p class="visually-hidden">
-            Apple.
-          </p>
-        </a>
-      </li>
-      <li class="store-links__item">
-        <a class="store-links__link store-links__link--android" href="#!">
-          <p class="visually-hidden">
-            Android.
-          </p>
-        </a>
-      </li>
-      <li class="store-links__item">
-        <a class="store-links__link store-links__link--windows" href="#!">
-          <p class="visually-hidden">
-            Windows.
-          </p>
-        </a>
-      </li>
-    </ul>
-    <p class="promo__description">
-      Доступно для iPhone, iPad, Android,
-      <br>
-      Windows Phone, OS X, Windows 8
-    </p>
   </section>
   <section class="features page-main__features">
     <h2 class="visually-hidden">
@@ -55,34 +57,49 @@
       Устали от серости мегаполиса?
     </p>
     <p class="features__tagline">
-      Нам есть, что вам предложить!
+      Нам есть, что вам<br>предложить!
     </p>
-    <dl class="features__list">
-      <div class="features__group features__group--1" >
-        <dt class="features__title">
-          Поднимает настроение
-        </dt>
-        <dd class="features__description">
-          Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-        </dd>
-      </div>
-      <div class="features__group features__group--2">
-        <dt class="features__title">
-          Меняет мир вокруг
-        </dt>
-        <dd class="features__description">
-          Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-        </dd>
-      </div>
-      <div class="features__group features__group--3">
-        <dt class="features__title">
-          Заводит новых друзей
-        </dt>
-        <dd class="features__description">
-          Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-        </dd>
-      </div>
-    </dl>
+    <div class="features__body">
+      <dl class="features__list">
+        <div class="features__group features__group--1" >
+          <dt class="features__title">
+            Поднимает настроение
+          </dt>
+          <dd class="features__description">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </dd>
+        </div>
+        <div class="features__group features__group--2">
+          <dt class="features__title">
+            Меняет мир вокруг
+          </dt>
+          <dd class="features__description">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект
+          </dd>
+        </div>
+        <div class="features__group features__group--3">
+          <dt class="features__title">
+            Заводит новых друзей
+          </dt>
+          <dd class="features__description">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+  <section class="advertising page-main__advertising">
+    <div class="advertising__inner advertising__inner--effect">
+      <h2 class="advertising__title">
+        Эффект на&nbsp;24&nbsp;часа!
+        </h2>
+      <p class="advertising__description">
+        Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!
+        </p>
+      <a class="advertising__link" href="#!">
+        Узнать больше об исследовании
+        </a>
+    </div>
   </section>
   <section class="reviews page-main__reviews slider">
     <h2 class="visually-hidden">
@@ -92,9 +109,14 @@
       <ul class="reviews__list slider__list">
           <li class="reviews__item">
             <blockquote class="reviews__info">
-              <cite class="reviews__author">
-                Николай Петров
-              </cite>
+                  <cite class="reviews__author">
+                    <span class="reviews__author-name">
+                      Николай Петров
+                    </span>
+                    <span class="reviews__author-note">
+                      25 лет, водитель трамвая
+                    </span>
+                  </cite>
               <q class="reviews__text">
                 Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
               </q>
@@ -122,7 +144,7 @@
           </li>
       </ul>
     </div>
-    <ul class="togglers slider__togglers">
+    <ul class="togglers slider__togglers slider__togglers--list">
       <li class="togglers__list">
         <button class="togglers__item togglers__item--current" type="button">
           <span class="visually-hidden">
@@ -145,16 +167,26 @@
       </button>
       </li>
     </ul>
+    <button class="slider__ring slider__ring--prev" type="button">
+      <span class="visually-hidden">
+        К предыдущему слайду.
+      </span>
+    </button>
+    <button class="slider__ring slider__ring--next" type="button">
+      <span class="visually-hidden">
+        К следующему слайду.
+      </span>
+    </button>
   </section>
   <section class="tariffs page-main__tariffs slider slider--alter">
     <h2 class="visually-hidden">
       Тарифы.
     </h2>
-    <div class="slider__wrapper">
-      <table class="tariffs__table slider__table" style="transform: translateX(-33.3333%)">
+    <div class="slider__wrapper slider__wrapper--alter">
+      <table class="tariffs__table slider__table">
         <thead class="tariffs__names">
           <tr class="tariffs__applications">
-            <th class="tariffs__invisibility" scope="row">
+            <th class="tariffs__invisibility" scope="col">
               <span class="visually-hidden">
                 Свойства.
               </span>
@@ -264,7 +296,7 @@
         </tbody>
       </table>
     </div>
-    <ul class="togglers slider__togglers">
+    <ul class="togglers slider__togglers togglers--table">
       <li class="togglers__list">
         <button class="togglers__item" type="button">
           <span class="visually-hidden">
@@ -321,11 +353,11 @@
         </p>
         <a class="contacts__link" href="#!">
           <span class="contacts__adress-adress">
-            ул. Большая Конюшенная, 19/8
+            ул. Большая<br>Конюшенная, 19/8
           </span>
         </a>
-        <div class="contacts__map"></div>
       </li>
     </ul>
+    <div class="contacts__map map"></div>
   </section>
 {% endblock %}

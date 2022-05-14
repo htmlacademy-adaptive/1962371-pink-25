@@ -1,16 +1,37 @@
 .page-footer {
-  padding: 40px 20px;
+  padding: 33px 20px;
   text-align: center;
+
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media @desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 70px 20px;
+
+    .centerer();
+  }
 }
 
 .page-footer__logo {
   display: table;
-  width: 145px;
+  min-width: 147px;
   min-height: 40px;
-  margin: 0 68px 38px;
+  margin: 0 auto 45px;
   background-image: url("../img/logo/logo-glasses.svg");
+  background-repeat: no-repeat;
+
+  @media @tablet-desktop {
+    margin: 0;
+  }
 }
 
 .page-footer__socials {
-  margin: -9px 0 38px -9px;
+  margin: -9px 0 0 -9px;
 }

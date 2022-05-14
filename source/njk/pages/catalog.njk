@@ -13,12 +13,12 @@
     Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?
   </p>
   <ul class="photo content__slot">
-    <li class="photo__item photo__item--best">
+    <li class="photo__item">
       <span class="photo__best-label">
         Панорама дня
       </span>
-      <picture class="photo__user photo__user--best picture">
-        <img class="picture__image" src="img/photo-people/panorama.jpg" width="320" height="137" alt="Панорама.">
+      <picture class="photo__user photo__user--best picture picture--fullwidth">
+        <img class="picture__image" src="img/photo-people/panorama.jpg" alt="Панорама.">
       </picture>
       <blockquote class="photo__info">
         <cite class="photo__author">
@@ -44,8 +44,8 @@
       </form>
     </li>
     <li class="photo__item">
-      <picture class="photo__user picture">
-        <img class="picture__image" src="img/photo-people/photo-car.jpg" width="280" height="180" alt="Автомобиль.">
+      <picture class="photo__user picture picture--fullwidth">
+        <img class="picture__image" src="img/photo-people/photo-car.jpg" alt="Автомобиль.">
       </picture>
       <blockquote class="photo__info">
         <cite class="photo__author">
@@ -71,8 +71,8 @@
       </form>
     </li>
     <li class="photo__item">
-      <picture class="photo__user picture">
-        <img class="picture__image" src="img/photo-people/photo-drums.jpg" width="280" height="180" alt="Барабаны.">
+      <picture class="photo__user picture picture--fullwidth">
+        <img class="picture__image" src="img/photo-people/photo-drums.jpg" alt="Барабаны.">
       </picture>
         <blockquote class="photo__info">
           <cite class="photo__author">
@@ -98,8 +98,8 @@
       </form>
     </li>
     <li class="photo__item">
-      <picture class="photo__user picture">
-        <img class="picture__image" src="img/photo-people/photo-window.jpg" width="280" height="180" alt="Зеркальным дом.">
+      <picture class="photo__user picture picture--fullwidth">
+        <img class="picture__image" src="img/photo-people/photo-window.jpg" alt="Зеркальным дом.">
       </picture>
         <blockquote class="photo__info">
           <cite class="photo__author">
@@ -124,9 +124,9 @@
         </p>
       </form>
     </li>
-    <li class="photo__item">
-      <picture class="photo__user picture">
-        <img class="picture__image" src="img/photo-people/photo-market.jpg" width="280" height="180" alt="Базар.">
+    <li class="photo__item photo__item--pp"> <!--модификатор для попадания в ПП-->
+      <picture class="photo__user picture picture--fullwidth">
+        <img class="picture__image" src="img/photo-people/photo-market.jpg" alt="Базар.">
       </picture>
         <blockquote class="photo__info">
           <cite class="photo__author">
@@ -152,8 +152,8 @@
       </form>
     </li>
     <li class="photo__item">
-      <picture class="photo__user picture">
-        <img class="picture__image" src="img/photo-people/photo-legs.jpg" width="280" height="180" alt="Ноги на скале.">
+      <picture class="photo__user picture picture--fullwidth">
+        <img class="picture__image" src="img/photo-people/photo-legs.jpg" alt="Ноги на скале.">
       </picture>
         <blockquote class="photo__info">
           <cite class="photo__author">
@@ -179,8 +179,8 @@
       </form>
     </li>
     <li class="photo__item">
-      <picture class="photo__user picture">
-        <img class="picture__image" src="img/photo-people/photo-wing.jpg" width="280" height="180" alt="Крыло самолета.">
+      <picture class="photo__user picture picture--fullwidth">
+        <img class="picture__image" src="img/photo-people/photo-wing.jpg" alt="Крыло самолета.">
       </picture>
         <blockquote class="photo__info">
           <cite class="photo__author">
@@ -233,7 +233,7 @@
         <label class="visually-hidden" for="crop">
           Обрезать фотографию.
         </label>
-        <input class="post-photo__range range" id="crop" name="crop" type="range" min="0" max="100" step="1" value="80">
+        <input class="post-photo__range range" id="crop" name="crop" type="range" min="0" max="100" step="1" value="85">
       </p>
       <p class="post-photo__filter">
         <button class="post-photo__toggler post-photo__toggler--fill" type="button">
