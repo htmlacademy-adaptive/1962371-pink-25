@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк &gt; {{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
@@ -12,7 +13,7 @@
           <a class="logo page-header__logo" href="index.html" {{ 'aria-current="page"' if page == 'index' }}>
           <img class="logo__image" src="img/logo/pink.svg" width="74" height="23" alt="Логотип Pink.">
           </a>
-          <button class="page-header__toggle" type="button">
+          <button class="page-header__toggle page-header__toggle--open" type="button">
             <span class="visually-hidden">Переключить режим видимости меню.</span>
           </button>
           <nav class="nav page-header__nav">
@@ -23,12 +24,12 @@
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="catalog.html">
+                <a class="nav__link {{ 'nav__link--current' if page == 'catalog' }}" href="catalog.html" {{ 'aria-current="page"' if page == 'caatalog' }}>
                   Фотографии
                 </a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="form.html">
+                <a class="nav__link {{ 'nav__link--current' if page == 'form' }}" href="form.html" {{ 'aria-current="page"' if page == 'form' }}>
                   Конкурс
                 </a>
               </li>
