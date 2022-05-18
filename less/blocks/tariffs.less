@@ -84,9 +84,9 @@
   line-height: 30px;
   text-align: left;
   background-color: var(--color-white);
-  border-right: 2px solid var(--color-grey);
   border-bottom: 2px solid var(--color-grey);
   border-left: 2px solid var(--color-grey);
+
 
   @media @mobile {
     padding-right: 64px;
@@ -104,8 +104,9 @@
   }
 
   &--current {
-    border-right: 2px solid var(--color-grey);
-    border-left: 2px solid var(--color-grey);
+    @media @mobile {
+      border-left: 2px solid var(--color-grey);
+    }
   }
 
   &:first-child {
@@ -185,6 +186,6 @@
   @media @mobile {
     position: absolute;
     top: 16px;
-    right: 17px;
+    right: 19px;
   }
 }

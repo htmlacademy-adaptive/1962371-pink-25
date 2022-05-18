@@ -6,6 +6,27 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+
+  @media @tablet {
+    margin: 9px 38px;
+
+    &--checkbox {
+      margin: 7px 38px;
+    }
+  }
+
+  @media @desktop {
+    margin: 0 52px;
+
+    &--checkbox {
+      display: grid;
+      grid-template-columns: repeat(3, 260px);
+      gap: 47px 55px;
+      max-width: 800px;
+      margin: 0;
+      padding: 13px 33px;
+    }
+  }
 }
 
 .checkers__input {
@@ -19,6 +40,10 @@
 
   &--radio {
     margin-right: 35px;
+
+    @media @tablet-desktop {
+      margin-right: 26px;
+    }
   }
 }
 
@@ -93,6 +118,34 @@
   align-items: center;
   margin-top: 47px;
 
+  @media @desktop {
+    margin: 0;
+
+    &--1 {
+      order: -6;
+    }
+
+    &--2 {
+      order: -3;
+    }
+
+    &--3 {
+      order: -5;
+    }
+
+    &--5 {
+      order: -4;
+      margin-left: -20px;
+    }
+
+    &--6 {
+      margin-left: -20px;
+    }
+  }
+
+  &--radio {
+    margin-top: 40px;
+  }
 
   &:first-child {
     margin-top: 0;

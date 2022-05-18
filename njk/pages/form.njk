@@ -9,11 +9,14 @@
       Конкурс на самое безбашенное путешествие с Пинк
     </h1>
   </header>
-  <p class="content__description">
-    Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-  </p>
+    <p class="content__description content__description--form">
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+    <span class="content__hint">
+      Пожалуйста, заполните форму ниже:
+    </span>
+    </p>
   <form class="form content__slot" action="https://echo.htmlacademy.ru/" method="post">
-    <fieldset class="data form__data">
+    <fieldset class="data form__data form__data--user">
       <legend class="visually-hidden">
         ФИО.
       </legend>
@@ -40,38 +43,38 @@
       <legend class="form__title">
         Ваши безбашенные достижения&nbsp;в&nbsp;путешествии
       </legend>
-      <ul class="checkers__list">
-        <li class="checkers__item">
+      <ul class="checkers__list checkers__list--checkbox">
+        <li class="checkers__item checkers__item--1">
           <input class="checkers__input checkers__input--checkbox" id="checker-selfie" type="checkbox" name="achievement[]" value="selfie" checked>
           <label class="checkers__label" for="checker-selfie">
             Сделал селфи с акулой
           </label>
         </li>
-        <li class="checkers__item">
+        <li class="checkers__item checkers__item--2">
           <input class="checkers__input checkers__input--checkbox" id="checker-beach" type="checkbox" name="achievement[]" value="beach" checked>
           <label class="checkers__label" for="checker-beach">
             Обгорел на пляже
           </label>
         </li>
-        <li class="checkers__item">
+        <li class="checkers__item checkers__item--3">
           <input class="checkers__input checkers__input--checkbox" id="checker-norris" type="checkbox" name="achievement[]" value="Norris">
           <label class="checkers__label" for="checker-norris">
             Видел Чака Норриса
           </label>
         </li>
-        <li class="checkers__item">
+        <li class="checkers__item checkers__item--4">
           <input class="checkers__input checkers__input--checkbox" id="checker-souvenirs" type="checkbox" name="achievement[]" value="souvenirs">
           <label class="checkers__label" for="checker-souvenirs">
             Накупил сувениров
           </label>
         </li>
-        <li class="checkers__item">
+        <li class="checkers__item checkers__item--5">
           <input class="checkers__input checkers__input--checkbox" id="checker-tower" type="checkbox" name="achievement[]" value="tower" checked>
           <label class="checkers__label" for="checker-tower">
             Удержал башню
           </label>
         </li>
-        <li class="checkers__item">
+        <li class="checkers__item checkers__item--6">
           <input class="checkers__input checkers__input--checkbox" id="checker-hotel" type="checkbox" name="achievement[]" value="hotel">
           <label class="checkers__label" for="checker-hotel">
             Разгромил отель
@@ -79,41 +82,41 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="data form__data form__contacs">
-      <legend class="visually-hidden">
-        Контакты.
+    <fieldset class="data form__data form__contacts form__data--contacts">
+      <legend class="form__label form__title form__title--contacts">
+        Контактная информация
       </legend>
-      <p class="data__item">
-        <label class="form__label" for="tel">
+      <p class="data__item data__item--contacts data__item--phone">
+        <label class="form__label form__label--contacts" for="tel">
           Номер телефона
         </label>
-        <input class="data__input" id="tel" type="tel" name="tel[]" placeholder="Номер, пожалуйста" pattern="^((8|\\+7)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}$">
+        <input class="data__input data__input--contacts" id="tel" type="tel" name="tel[]" placeholder="Номер, пожалуйста" pattern="^((8|\\+7)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}$" maxlength="15" required>
       </p>
-      <p class="data__item">
-        <label class="form__label" for="mail">
+      <p class="data__item data__item--contacts data__item--mail">
+        <label class="form__label form__label--contacts" for="mail">
           Адрес почты
         </label>
-        <input class="data__input" id="mail" type="email" name="email[]" placeholder="Введите почту *" required>
+        <input class="data__input data__input--contacts" id="mail" type="email" name="email[]" placeholder="Введите почту *"  maxlength="15" required>
       </p>
     </fieldset>
-    <fieldset class="checkers form__set form__set-model form__set--radio">
-      <legend class="form__title form__title-model">
+    <fieldset class="checkers form__set form__set--model form__set--radio">
+      <legend class="form__title form__title--model">
         С каким приложением путешествовали?
       </legend>
       <ul class="checkers__list">
-        <li class="checkers__item">
+        <li class="checkers__item checkers__item--radio">
           <input class="checkers__input checkers__input--radio" id="checker-ios" type="radio" name="model[]" value="iOS" checked>
           <label class="checkers__label" for="checker-ios">
             Pink для iOS
           </label>
         </li>
-        <li class="checkers__item">
+        <li class="checkers__item checkers__item--radio">
           <input class="checkers__input checkers__input--radio" id="checker-android" type="radio" name="model[]" value="Android">
           <label class="checkers__label" for="checker-android">
             Pink на Android
           </label>
         </li>
-        <li class="checkers__item">
+        <li class="checkers__item checkers__item--radio">
           <input class="checkers__input checkers__input--radio" id="checker-windows" type="radio" name="model[]" value="Windows">
           <label class="checkers__label" for="checker-windows">
             Windows Phone
@@ -121,13 +124,13 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="data form__data">
-      <legend class="form__title form__title--emotions">Опишите свои эмоции</legend>
+    <fieldset class="data form__data form__data--multiline">
+      <legend class="form__title form__title--multiline">Опишите свои эмоции</legend>
       <p class="data__item">
-        <label class="visually-hidden" for="emotions-text">
+        <label class="visually-hidden" for="multiline-text">
           Описание эмоций.
         </label>
-        <textarea class="data__input data__input--message" id="emotions-text" name="text" maxlength="1000" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <textarea class="data__input data__input--message" id="multiline-text" name="text" maxlength="1000" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </p>
     </fieldset>
     <footer class="form__footer">
@@ -135,7 +138,7 @@
         Отправить форму
       </button>
         <p class="content__description content__description--form">
-          <span class="content__sign">*</span> — обязательные поля
+          <span class="content__sign">*</span> — обязательные <span class="content__visually-hidden"> &zwnj; для заполнения </span> &zwnj; поля
         </p>
     </footer>
   </form>
