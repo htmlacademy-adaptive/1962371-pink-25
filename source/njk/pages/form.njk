@@ -9,11 +9,11 @@
       Конкурс на самое безбашенное путешествие с Пинк
     </h1>
   </header>
-    <p class="content__description content__description--form">
+    <p class="content__description content__lead">
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-    <span class="content__hint">
-      Пожалуйста, заполните форму ниже:
-    </span>
+      <span class="content__hint">
+        Пожалуйста, заполните форму ниже:
+      </span>
     </p>
   <form class="form content__slot" action="https://echo.htmlacademy.ru/" method="post">
     <fieldset class="data form__data form__data--user">
@@ -87,13 +87,13 @@
         Контактная информация
       </legend>
       <p class="data__item data__item--contacts data__item--phone">
-        <label class="form__label form__label--contacts" for="tel">
+        <label class="form__label form__label--contacts form__label--phone" for="tel">
           Номер телефона
         </label>
         <input class="data__input data__input--contacts" id="tel" type="tel" name="tel[]" placeholder="Номер, пожалуйста" pattern="^((8|\\+7)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}$" maxlength="15" required>
       </p>
       <p class="data__item data__item--contacts data__item--mail">
-        <label class="form__label form__label--contacts" for="mail">
+        <label class="form__label form__label--contacts form__label--mail" for="mail">
           Адрес почты
         </label>
         <input class="data__input data__input--contacts" id="mail" type="email" name="email[]" placeholder="Введите почту *"  maxlength="15" required>
@@ -137,8 +137,8 @@
       <button class="content__button button" type="submit">
         Отправить форму
       </button>
-        <p class="content__description content__description--form">
-          <span class="content__sign">*</span> — обязательные <span class="content__visually-hidden"> &zwnj; для заполнения </span> &zwnj; поля
+        <p class="content__description content__lead">
+          <span class="content__sign">*</span> — обязательные <span class="content__visually-hidden"> для заполнения </span> поля
         </p>
     </footer>
   </form>

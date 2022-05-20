@@ -18,40 +18,23 @@
     display: flex;
 
     &--contacts {
-      position: relative;
-      flex-direction: column-reverse;
+      @media @tablet-desktop {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
 
-      &:not(:first-of-type) {
-        @media @tablet {
-          margin-top: 30px;
-        }
+        &:not(:first-of-type) {
+          @media @tablet {
+            margin-top: 30px;
+          }
 
-        @media @desktop {
-          margin: 0;
+          @media @desktop {
+            margin: 0;
+          }
         }
       }
     }
   }
-}
-
-.data__item--contacts::after {
-  content: "";
-  position: absolute;
-  top: 23px;
-  right: -3px;
-  width: 44px;
-  height: 44px;
-  mask-repeat: no-repeat;
-  background-color: var(--color-pink);
-}
-
-.data__item--phone::after {
-  mask-image: url("../img/icons/icon-phone.svg");
-}
-
-.data__item--mail::after {
-  top: 25px;
-  mask-image: url("../img/icons/icon-mail.svg");
 }
 
 .data__input {
@@ -89,6 +72,6 @@
   }
 
   @media @desktop {
-    min-height: 127px;
+    min-height: 128px;
   }
 }

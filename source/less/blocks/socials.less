@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 39px;
+  margin: 20px 10px 39px 0;
   padding: 0;
   list-style: none;
 
@@ -11,7 +11,7 @@
   }
 
   @media @desktop {
-    margin-bottom: 0;
+    margin: -8px 7px 0 0;
   }
 }
 
@@ -38,7 +38,10 @@
     margin: auto;
     background-color: var(--color-pink);
     transition: inherit;
+    mask-position: -1px 0;
+    mask-size: 21px;
   }
+
 
   &:hover,
   &:focus-visible {
@@ -54,14 +57,14 @@
   }
 
   &--vkontakte::before {
-    mask-image: url("../img/icons/social-vk.svg");
+    mask-image: url("../img/sprite.svg#icon-social-vk");
   }
 
   &--telegram::before {
-    mask-image: url("../img/icons/social-telegram.svg");
+    mask-image: url("../img/sprite.svg#icon-social-telegram");
   }
 
   &--youtube::before {
-    mask-image: url("../img/icons/social-youtube.svg");
+    mask-image: url("../img/sprite.svg#icon-social-youtube");
   }
 }
