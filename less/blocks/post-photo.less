@@ -53,9 +53,19 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-people/photo-snowroad@2x.jpg");
+    background-size: contain;
+  }
+
   @media @tablet-desktop {
     height: 400px;
     background-image: url("../img/photo-people/photo-snowroad-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo-people/photo-snowroad-tablet@2x.jpg");
+      background-size: contain;
+    }
   }
 }
 
@@ -128,11 +138,12 @@
   &::before {
     content: "";
     display: block;
+    margin: auto;
     background-color: var(--color-lightblue-30);
   }
 
   &--crop::before {
-    mask-image: url("../img/icons/icon-crop.svg");
+    mask-image: url("../img/sprite.svg#icon-crop");
     width: 44px;
     height: 44px;
     mask-size: cover;
@@ -146,7 +157,7 @@
   }
 
   &--fill::before {
-    mask-image: url("../img/icons/icon-fill.svg");
+    mask-image: url("../img/sprite.svg#icon-fill");
     width: 48px;
     height: 43px;
 
@@ -164,7 +175,7 @@
   }
 
   &--contrast::before {
-    mask-image: url("../img/icons/icon-contrast.svg");
+    mask-image: url("../img/sprite.svg#icon-contrast");
     width: 32px;
     height: 32px;
 

@@ -25,16 +25,32 @@
   background-position: 50%;
 
   &--apple {
-    background-image: url("../img/icons/icon-apple.svg");
+    background-image: url("../img/sprite.svg#icon-apple");
   }
 
   &--android {
-    background-image: url("../img/icons/icon-android.svg");
-    background-position: 50% 16px;
+    background-image: url("../img/sprite.svg#icon-android");
+    background-position: 50% 12px;
+    background-size: 55px 55px;
+
+    @media @desktop {
+      background-size: 55px 59px;
+    }
   }
 
   &--windows {
-    background-image: url("../img/icons/icon-windows.svg");
-    background-position: 50% 22px;
+    background-image: url("../img/sprite.svg#icon-windows");
+    background-position: 60% 22px;
+    background-size: 60px 41px;
+
+    @media @tablet {
+      background-position: 43% 19px;
+      background-size: 54px 41px;
+    }
+
+    @media @desktop {
+      background-position: 54% 21px;
+      background-size: 48px 43px;
+    }
   }
 }

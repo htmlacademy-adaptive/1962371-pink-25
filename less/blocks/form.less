@@ -6,13 +6,16 @@
 
   @media @desktop {
     grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+    gap: 58px 70px;
 
     .centerer();
   }
 }
 
 .form__data {
-  padding: 20px 18px 42px;
+  margin: 0;
+  padding: 20px 20px 42px;
   border: none;
 
   @media @tablet-desktop {
@@ -21,6 +24,7 @@
   }
 
   @media @desktop {
+    margin: 0;
     padding: 20px 25px 42px 20px;
   }
 
@@ -31,6 +35,10 @@
       margin: 0;
       padding-bottom: 37px;
       border: none;
+    }
+
+    @media @desktop {
+      padding: 0;
     }
   }
 
@@ -79,19 +87,49 @@
     }
 
     @media @desktop {
-      margin: 9px 20px 15px 18px;
+      margin: 9px 19px 0;
+    }
+
+    &::before {
+      @media @tablet-desktop {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 61px;
+        height: 63px;
+        background-color: var(--color-grey);
+      }
+    }
+
+    &::after {
+      @media @tablet-desktop {
+        content: "";
+        position: absolute;
+        top: 23px;
+        right: 12px;
+        width: 30px;
+        height: 19px;
+        mask-repeat: no-repeat;
+        background-color: var(--color-pink);
+      }
     }
   }
-}
 
-.form__label--contacts::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  width: 59px;
-  height: 59px;
-  background-color: var(--color-grey);
+  &--phone::after {
+    @media @tablet-desktop {
+      mask-image: url("../img/sprite.svg#icon-phone");
+    }
+  }
+
+  &--mail::after {
+    @media @tablet-desktop {
+      top: 24px;
+      right: 10px;
+      height: 15px;
+      mask-image: url("../img/sprite.svg#icon-mail");
+    }
+  }
 }
 
 .form__set {
@@ -106,12 +144,6 @@
     border: 2px solid var(--color-grey);
   }
 
-  @media @desktop {
-    margin-top: 6px;
-    margin-right: 19px;
-    margin-left: 25px;
-  }
-
   &--radio {
     margin-bottom: 16px;
 
@@ -122,7 +154,8 @@
     }
 
     @media @desktop {
-      padding-top: 17px;
+      margin: -14px 0 0;
+      padding: 38px 32px 47px;
     }
   }
 
@@ -135,8 +168,8 @@
 
     @media @desktop {
       grid-column: 1 / -1;
-      margin-top: 36px;
-      padding-top: 32px;
+      margin: 0;
+      padding: 40px 58px 58px;
     }
   }
 }
@@ -160,6 +193,7 @@
   }
 
   @media @desktop {
+    margin-bottom: 5px;
     padding: 0 37px;
   }
 
@@ -167,7 +201,7 @@
     margin-bottom: 17px;
 
     @media @desktop {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
   }
 
@@ -175,7 +209,8 @@
     margin: 0 0 37px;
 
     @media @desktop {
-      margin-bottom: 30px;
+      margin-bottom: 9px;
+      padding: 0 23px;
     }
   }
 
@@ -186,7 +221,7 @@
   }
 
   @media @tablet {
-    float: none;
+    // float: none;
     width: auto;
     margin: 0 auto;
     padding: 0 30px;
@@ -203,7 +238,7 @@
 
   @media @desktop {
     grid-column: 1 / -1;
-    padding: 34px 58px 0;
+    padding: 28px 58px 13px;
   }
 }
 
@@ -217,6 +252,9 @@
 
   @media @desktop {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     grid-column: 1 / -1;
+    padding: 6px 0 0;
   }
 }

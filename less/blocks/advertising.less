@@ -15,20 +15,24 @@
   @media @tablet-desktop {
     padding-left: 330px;
     background-repeat: no-repeat;
-    background-position: 20px 54px;
+    background-position: -21px 53px;
   }
 
   @media @desktop {
     padding: 130px 40px 111px 390px;
-    background-position: 20px 36px;
-    background-size: 300px 345px;
+    background-position: -30px 35px;
 
     .centerer();
   }
 
   &--effect {
     @media @tablet-desktop {
-      background-image: url("../img/icons/icon-effect.svg");
+      background-image: url("../img/sprite.svg#icon-effect");
+      background-size: 320px 278px;
+    }
+
+    @media @desktop {
+      background-size: 400px 347px;
     }
   }
 }
