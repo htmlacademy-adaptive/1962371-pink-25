@@ -44,6 +44,10 @@
   overflow: hidden;
 
   &--alter {
+    @media @tablet {
+      padding-bottom: 26px;
+    }
+
     @media @desktop {
       width: 980px;
       margin-right: auto;
@@ -129,7 +133,7 @@
     height: 100%;
     background-color: var(--color-black-30);
     transition: background-color 0.3s ease-in-out;
-    mask-image: url("../img/icons/icon-arrow.svg");
+    mask-image: url("../img/sprite.svg#icon-arrow");
     mask-size: cover;
   }
 

@@ -13,11 +13,15 @@
 
   @media @desktop {
     grid-template-columns: 1fr 1fr 1fr;
-    width: 980px;
-    margin-right: auto;
-    margin-left: auto;
     row-gap: 55px;
+
+    .centerer();
   }
+}
+
+.photo--panorama .photo__picture {
+  margin: 0 -50vw;
+  overflow: hidden;
 }
 
 .photo__user {
@@ -25,6 +29,11 @@
 
   &--best {
     margin: 0 -20px;
+
+    @media @desktop {
+      margin: 0 -11vw;
+      overflow: hidden;
+    }
   }
 }
 
@@ -63,7 +72,7 @@
   }
 }
 
-.photo__item--best .photo__user img {
+.photo__item--best img {
   @media @tablet {
     height: 509px;
   }
@@ -78,7 +87,7 @@
     display: grid;
     grid-template-areas: "author likes" "text text";
     grid-template-columns: 3fr 2fr;
-    padding: 22px 30px 14px;
+    padding: 21px 30px 14px;
   }
 
   @media @desktop {
@@ -188,15 +197,11 @@
   border: none;
   cursor: pointer;
 
-  @media @tablet {
+  @media @tablet-desktop {
     margin-right: 0;
-    margin-left: 16px;
+    margin-left: 17px;
   }
 
-  @media @desktop {
-    margin-right: 1px;
-    margin-left: 16px;
-  }
 
   &::before {
     content: "";
@@ -204,7 +209,7 @@
     width: 13px;
     height: 12px;
     background-color: var(--color-pink);
-    mask-image: url("../img/icons/icon-heart.svg");
+    mask-image: url("../img/sprite.svg#icon-heart");
   }
 
   &:hover::before {

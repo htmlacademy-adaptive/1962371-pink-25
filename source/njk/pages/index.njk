@@ -13,7 +13,9 @@
           Взгляните на&nbsp;жизнь иначе!
         </p>
         <picture class="promo__picture picture">
-          <img class="picture__image" src="img/pictures/promo-mobile.png" alt="Телефон с запущенным приложением Pink в руке.">
+          <source media="(min-width: 980px)" srcset="img/pictures/promo-desktop.png 1x, img/pictures/promo-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/pictures/promo-tablet.png 1x, img/pictures/promo-tablet@2x.png 2x">
+          <img class="picture__image" src="img/pictures/promo-mobile.png" srcset="img/pictures/promo-mobile@2x.png 2x" alt="Телефон с запущенным приложением Pink в руке.">
         </picture>
       </div>
       <div class="promo__links">
@@ -296,7 +298,7 @@
         </tbody>
       </table>
     </div>
-    <ul class="togglers slider__togglers slider__togglers--table">
+    <ul class="togglers slider__togglers slider__togglers--table togglers--table">
       <li class="togglers__list">
         <button class="togglers__item" type="button">
           <span class="visually-hidden">
@@ -358,6 +360,7 @@
         </a>
       </li>
     </ul>
+    <h2 class="visually-hidden">Как до нас добраться</h2>
     <div class="contacts__map map"></div>
   </section>
 {% endblock %}

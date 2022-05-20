@@ -16,15 +16,14 @@
   }
 
   @media @desktop {
-    margin: 0 52px;
+    padding: 0 40px;
 
     &--checkbox {
       display: grid;
-      grid-template-columns: repeat(3, 260px);
+      grid-template-columns: repeat(3, auto);
       gap: 47px 55px;
-      max-width: 800px;
       margin: 0;
-      padding: 13px 33px;
+      padding: 0;
     }
   }
 }
@@ -86,16 +85,16 @@
   left: 9px;
   width: 22px;
   height: 16px;
-  mask-image: url("../img/icons/icon-check-mark.svg");
+  mask-image: url("../img/sprite.svg#icon-check-mark");
   mask-repeat: no-repeat;
 }
 
 .checkers__input--radio::after {
-  top: 11px;
-  left: 13px;
-  width: 22px;
-  height: 18px;
-  mask-image: url("../img/icons/icon-check-mark-ellipse.svg");
+  top: 10px;
+  left: 11px;
+  width: 18px;
+  height: 17px;
+  mask-image: url("../img/sprite.svg#icon-check-mark-ellipse");
   mask-repeat: no-repeat;
 }
 
@@ -135,11 +134,6 @@
 
     &--5 {
       order: -4;
-      margin-left: -20px;
-    }
-
-    &--6 {
-      margin-left: -20px;
     }
   }
 
