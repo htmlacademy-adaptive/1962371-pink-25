@@ -9,18 +9,17 @@
     <link rel="icon" href="img/favicons/favicon-32x32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png">
     <link rel="manifest" href="favicons.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
-    <header class="page-header page__header page-header--js">
+    <header class="page-header page__header">
       <div class="page-header__top">
         <div class="page-header__inner">
-          <a class="logo page-header__logo" href="index.html" {{ 'aria-current="page"' if page == 'index' }}>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo/logo-pink-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo/logo-pink-tablet.svg">
-              <img class="logo__image" src="img/logo/logo-pink.svg" width="74" height="23" alt="Логотип Pink.">
-            </picture>
+          <a class="logo page-header__logo" href="index.html" {{ 'aria-current="page"' if page == 'index' }} aria-label="На главную.">
+            <svg class="logo__image" role="img" aria-label="Логотип Pink." width="147" height="40" focusable="false">
+              <use xlink:href="img/logo/logo-pink.svg#logo"/>
+            </svg>
+          </a>
           </a>
           <button class="page-header__toggle page-header__toggle--opened" type="button">
             <span class="visually-hidden">Переключить режим видимости меню.</span>
@@ -56,11 +55,11 @@
       {% block main %}{% endblock %}
     </main>
     <footer class="page-footer page__footer">
-      <a class="logo page-footer__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 980px)" srcset="img/logo/logo-glasses-desktop.svg">
-          <img class="logo__image" src="img/logo/logo-glasses.svg" width="145" height="40" alt="Логотип Pink." {{ 'aria-current="page"' if page == 'index' }}>
-        </picture>
+      <a class="logo page-footer__logo" href="index.html" aria-current="page" aria-label="На главную.">
+        <svg class="logo__image" role="img" aria-label="Логотип Pink." width="147" height="40" focusable="false">
+          <use xlink:href="img/logo/logo-pink.svg#logo">
+          </use>
+        </svg>
       </a>
       <ul class="socials page-footer__socials">
         <li class="socials__item">
@@ -81,15 +80,11 @@
       </ul>
       <a class="logo-academy page-footer__logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <img class="logo-academy__image" src="img/logo/htmlacademy.svg" width="27" height="34" alt="HTML Academy.">
+        <svg class="logo-academy__image" role="img" aria-label="HTML Academy." width="27" height="34">
+          <use xlink:href="img/logo/logo-htmlacademy.svg#logo"/>
+        </svg>
       </a>
     </footer>
     {% block modal %}{% endblock %}
-
-    <script>
-      window.pinegladePP = { breakpoints: [320, 660, 1200] };
-    </script>
-    <script src="https://efiand.github.io/pineglade-pp/pineglade-pp.min.js">
-    </script>
   </body>
 </html>

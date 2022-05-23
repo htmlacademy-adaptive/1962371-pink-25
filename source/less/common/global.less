@@ -30,6 +30,10 @@
 body {
   margin: 0;
   color: var(--color-lightblue);
+
+  &:focus {
+    outline: none;
+  }
 }
 
 a {
@@ -39,4 +43,22 @@ a {
 img {
   max-width: 100%;
   object-fit: contain;
+}
+
+:focus {
+  outline: 2px solid var(--color-pink);
+  outline-offset: 0;
+
+  @supports selector(:focus-visible) {
+    outline: none;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-pink);
+  outline-offset: 0;
+
+  &:active {
+    outline: none;
+  }
 }

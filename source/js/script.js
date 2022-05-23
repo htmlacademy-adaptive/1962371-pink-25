@@ -1,6 +1,9 @@
-import PageHeader from './blocks/page-header.js';
-import { setupBlocks } from './common/util.js';
+(() => {
+  const pageHeaderElement = document.querySelector('.page-header');
 
-[
-  ['.page-header', PageHeader],
-].forEach(setupBlocks);
+  pageHeaderElement.querySelector('.page-header__toggle').addEventListener('click', () => {
+    pageHeaderElement.classList.toggle('page-header--opened');
+  });
+
+  pageHeaderElement.classList.add('page-header--js');
+})();
