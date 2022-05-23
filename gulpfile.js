@@ -11,7 +11,6 @@ import less from 'gulp-less';
 import lessSyntax from 'postcss-less';
 import lintspaces from 'gulp-lintspaces';
 import mozjpeg from 'imagemin-mozjpeg';
-import mqpacker from 'postcss-sort-media-queries';
 import pngquant from 'imagemin-pngquant';
 import postcss from 'gulp-postcss';
 import postcssBemLinter from 'postcss-bem-linter';
@@ -65,7 +64,6 @@ export const testEditorconfig = () => src(editorconfigSources)
 export const buildStyles = () => src('source/less/*.less', { sourcemaps: IS_DEV })
   .pipe(less())
   .pipe(postcss([
-    mqpacker(),
     autoprefixer(),
     cssnano({ preset: ['default', { cssDeclarationSorter: false }] })
   ]))
