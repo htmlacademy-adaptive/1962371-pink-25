@@ -5,19 +5,22 @@
   line-height: 18px;
   text-decoration: none;
 
+  &:hover .logo-academy__image {
+    color: var(--color-lightblue);
+  }
+
+  &:active .logo-academy__image {
+    color: var(--color-lightblue-30);
+  }
+
   @media @desktop {
     font-size: 18px;
   }
 }
 
 .logo-academy__image {
+  --color-logo: currentColor;
   margin-left: 15px;
-
-  @media @tablet {
-    margin-left: 15px;
-  }
-
-  // @media @desktop{
-  //   margin-left: 12px;
-  // }
+  color: var(--color-pink);
+  transition: inherit;
 }
