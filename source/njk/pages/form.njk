@@ -86,17 +86,17 @@
       <legend class="form__label form__title form__title--contacts">
         Контактная информация
       </legend>
-      <p class="data__item data__item--contacts data__item--phone">
+      <p class="data__item data__item--phone data__item--contacts">
         <label class="form__label form__label--contacts form__label--phone" for="tel">
           Номер телефона
         </label>
-        <input class="data__input data__input--contacts" id="tel" type="tel" name="tel[]" placeholder="Номер, пожалуйста" pattern="^((8|\\+7)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}$" maxlength="15" required>
+        <input class="data__input data__input--contacts" id="tel" type="tel" name="tel[]" placeholder="Номер, пожалуйста" pattern="^((8|\\+7)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}$" maxlength="25" required>
       </p>
-      <p class="data__item data__item--contacts data__item--mail">
+      <p class="data__item data__item--mail data__item--contacts">
         <label class="form__label form__label--contacts form__label--mail" for="mail">
           Адрес почты
         </label>
-        <input class="data__input data__input--contacts" id="mail" type="email" name="email[]" placeholder="Введите почту *"  maxlength="15" required>
+        <input class="data__input data__input--contacts" id="mail" type="email" name="email[]" placeholder="Введите почту *"  maxlength="100" required>
       </p>
     </fieldset>
     <fieldset class="checkers form__set form__set--model form__set--radio">

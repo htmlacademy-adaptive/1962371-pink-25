@@ -49,21 +49,47 @@
   max-width: 300px;
   height: 374px;
   margin: auto;
-  background-image: url("../img/photo-people/photo-snowroad.jpg");
+
+  @supports not (background-image: url("../img/photo-people/photo-snowroad.webp")) {
+    background-image: url("../img/photo-people/photo-snowroad.jpg");
+  }
+
+  @supports (background-image: url("../img/photo-people/photo-snowroad.webp")) {
+    background-image: url("../img/photo-people/photo-snowroad.webp");
+  }
   background-repeat: no-repeat;
   cursor: pointer;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/photo-people/photo-snowroad@2x.jpg");
+    @supports not (background-image: url("../img/photo-people/photo-snowroad@2x.webp")) {
+      background-image: url("../img/photo-people/photo-snowroad@2x.jpg");
+    }
+
+    @supports (background-image: url("../img/photo-people/photo-snowroad@2x.webp")) {
+      background-image: url("../img/photo-people/photo-snowroad@2x.webp");
+    }
     background-size: contain;
   }
 
   @media @tablet-desktop {
     height: 400px;
-    background-image: url("../img/photo-people/photo-snowroad-tablet.jpg");
+
+    @supports not (background-image: url("../img/photo-people/photo-snowroad-tablet.webp")) {
+      background-image: url("../img/photo-people/photo-snowroad-tablet.jpg");
+    }
+
+    @supports (background-image: url("../img/photo-people/photo-snowroad-tablet.webp")) {
+      background-image: url("../img/photo-people/photo-snowroad-tablet.webp");
+    }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/photo-people/photo-snowroad-tablet@2x.jpg");
+      @supports not (background-image: url("../img/photo-people/photo-snowroad-tablet@2x.webp")) {
+        background-image: url("../img/photo-people/photo-snowroad-tablet@2x.jpg");
+      }
+
+      @supports (background-image: url("../img/photo-people/photo-snowroad-tablet@2x.webp")) {
+        background-image: url("../img/photo-people/photo-snowroad-tablet@2x.webp");
+      }
     }
   }
 }
