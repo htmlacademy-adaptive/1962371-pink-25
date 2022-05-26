@@ -4,10 +4,22 @@
   color: var(--color-white);
 
   @media @desktop {
-    background-image: url("../img/pictures/back-desktop-background.jpg");
+    @supports not (background-image: url("../img/pictures/back-desktop-background.webp")) {
+      background-image: url("../img/pictures/back-desktop-background.jpg");
+    }
+
+    @supports (background-image: url("../img/pictures/back-desktop-background.webp")) {
+      background-image: url("../img/pictures/back-desktop-background.webp");
+    }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/pictures/back-desktop-background@2x.jpg");
+      @supports not (background-image: url("../img/pictures/back-desktop-background.webp")) {
+        background-image: url("../img/pictures/back-desktop-background.jpg");
+      }
+
+      @supports (background-image: url("../img/pictures/back-desktop-background@2x.webp")) {
+        background-image: url("../img/pictures/back-desktop-background@2x.webp");
+      }
     }
   }
 }

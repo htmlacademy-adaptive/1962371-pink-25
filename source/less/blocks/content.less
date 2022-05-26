@@ -8,10 +8,22 @@
   background-size: cover;
 
   @media @mobile {
-    background-image: url("../img/pictures/back-mobile-background.jpg");
+    @supports not (background-image: url("../img/pictures/back-mobile-background.webp")) {
+      background-image: url("../img/pictures/back-mobile-background.jpg");
+    }
+
+    @supports (background-image: url("../img/pictures/back-mobile-background.webp")) {
+      background-image: url("../img/pictures/back-mobile-background.webp");
+    }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/pictures/back-mobile-background@2x.jpg");
+      @supports not (background-image: url("../img/pictures/back-mobile-background@2x.webp")) {
+        background-image: url("../img/pictures/back-mobile-background@2x.jpg");
+      }
+
+      @supports (background-image: url("../img/pictures/back-mobile-background@2x.webp")) {
+        background-image: url("../img/pictures/back-mobile-background@2x.webp");
+      }
     }
   }
 
@@ -19,20 +31,46 @@
     margin-top: -110px;
     padding-top: 177px;
     padding-bottom: 59px;
-    background-image: url("../img/pictures/back-tablet-background.jpg");
+
+    @supports not (background-image: url("../img/pictures/back-tablet-background.webp")) {
+      background-image: url("../img/pictures/back-tablet-background.jpg");
+    }
+
+    @supports (background-image: url("../img/pictures/back-tablet-background.webp")) {
+      background-image: url("../img/pictures/back-tablet-background.webp");
+    }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/pictures/back-tablet-background@2x.jpg");
+      @supports not (background-image: url("../img/pictures/back-tablet-background@2x.webp")) {
+        background-image: url("../img/pictures/back-tablet-background@2x.jpg");
+      }
+
+      @supports (background-image: url("../img/pictures/back-tablet-background@2x.webp")) {
+        background-image: url("../img/pictures/back-tablet-background@2x.webp");
+      }
     }
   }
 
   @media @desktop {
     margin-top: -110px;
     padding: 169px 80px 90px;
-    background-image: url("../img/pictures/back-desktop-background.jpg");
+
+    @supports not (background-image: url("../img/pictures/back-desktop-background.webp")) {
+      background-image: url("../img/pictures/back-desktop-background.jpg");
+    }
+
+    @supports (background-image: url("../img/pictures/back-desktop-background.webp")) {
+      background-image: url("../img/pictures/back-desktop-background.webp");
+    }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/pictures/back-desktop-background@2x.jpg");
+      @supports not (background-image: url("../img/pictures/back-desktop-background.webp")) {
+        background-image: url("../img/pictures/back-desktop-background.jpg");
+      }
+
+      @supports (background-image: url("../img/pictures/back-desktop-background@2x.webp")) {
+        background-image: url("../img/pictures/back-desktop-background@2x.webp");
+      }
     }
   }
 
@@ -41,19 +79,45 @@
 
     @media @tablet {
       padding-bottom: 128px;
-      background-image: url("../img/pictures/back-tablet-background.jpg");
+
+      @supports not (background-image: url("../img/pictures/back-tablet-background.webp")) {
+        background-image: url("../img/pictures/back-tablet-background.jpg");
+      }
+
+      @supports (background-image: url("../img/pictures/back-tablet-background.webp")) {
+        background-image: url("../img/pictures/back-tablet-background.webp");
+      }
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/pictures/back-tablet-background@2x.jpg");
+        @supports not (background-image: url("../img/pictures/back-tablet-background@2x.webp")) {
+          background-image: url("../img/pictures/back-tablet-background@2x.jpg");
+        }
+
+        @supports (background-image: url("../img/pictures/back-tablet-background@2x.webp")) {
+          background-image: url("../img/pictures/back-tablet-background@2x.webp");
+        }
       }
     }
 
     @media @desktop {
       padding: 169px 50px 89px;
-      background-image: url("../img/pictures/back-desktop-background.jpg");
+
+      @supports not (background-image: url("../img/pictures/back-desktop-background.webp")) {
+        background-image: url("../img/pictures/back-desktop-background.jpg");
+      }
+
+      @supports (background-image: url("../img/pictures/back-desktop-background.webp")) {
+        background-image: url("../img/pictures/back-desktop-background.webp");
+      }
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/pictures/back-desktop-background@2x.jpg");
+        @supports not (background-image: url("../img/pictures/back-desktop-background.webp")) {
+          background-image: url("../img/pictures/back-desktop-background.jpg");
+        }
+
+        @supports (background-image: url("../img/pictures/back-desktop-background@2x.webp")) {
+          background-image: url("../img/pictures/back-desktop-background@2x.webp");
+        }
       }
     }
   }
